@@ -1,0 +1,38 @@
+name: Translation
+description: 翻訳を改善する
+labels: ["Translation"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting!
+        First, in order to avoid duplicate Issues, please search to see if the problem you found has already been reported.
+        Also, If you are NOT owner/admin of server, PLEASE DONT REPORT SERVER SPECIFIC ISSUES TO HERE! (e.g. feature XXX is not working in misskey.example) Please try with another misskey servers, and if your issue is only reproducible with specific server, contact your server's owner/admin first.
+
+  - type: textarea
+    attributes:
+      label: 言語
+      description: 翻訳対象の言語を教えてください
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 翻訳前/修正前の文章
+      description: 翻訳前/修正前の文章を教えてください。どの言語でも構いません
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 翻訳後/修正後の文章
+      description: 翻訳後/修正後の文章を教えてください。
+    validations:
+      required: true
+
+  - type: checkboxes
+    attributes:
+      label: 自分でPRを出しますか？
+      options:
+        - label: はい、私がPull Requestを出します。
