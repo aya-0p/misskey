@@ -19,7 +19,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:admin:meta*
      */
-    post: operations['admin___meta'];
+    post: operations['admin/meta'];
   };
   '/admin/abuse-user-reports': {
     /**
@@ -28,7 +28,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:admin:abuse-user-reports*
      */
-    post: operations['admin___abuse-user-reports'];
+    post: operations['admin/abuse-user-reports'];
   };
   '/admin/accounts/create': {
     /**
@@ -37,7 +37,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['admin___accounts___create'];
+    post: operations['admin/accounts/create'];
   };
   '/admin/accounts/delete': {
     /**
@@ -46,7 +46,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:account*
      */
-    post: operations['admin___accounts___delete'];
+    post: operations['admin/accounts/delete'];
   };
   '/admin/accounts/find-by-email': {
     /**
@@ -55,7 +55,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:admin:account*
      */
-    post: operations['admin___accounts___find-by-email'];
+    post: operations['admin/accounts/find-by-email'];
   };
   '/admin/ad/create': {
     /**
@@ -64,7 +64,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:ad*
      */
-    post: operations['admin___ad___create'];
+    post: operations['admin/ad/create'];
   };
   '/admin/ad/delete': {
     /**
@@ -73,7 +73,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:ad*
      */
-    post: operations['admin___ad___delete'];
+    post: operations['admin/ad/delete'];
   };
   '/admin/ad/list': {
     /**
@@ -82,7 +82,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:admin:ad*
      */
-    post: operations['admin___ad___list'];
+    post: operations['admin/ad/list'];
   };
   '/admin/ad/update': {
     /**
@@ -91,7 +91,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:ad*
      */
-    post: operations['admin___ad___update'];
+    post: operations['admin/ad/update'];
   };
   '/admin/announcements/create': {
     /**
@@ -100,7 +100,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:announcements*
      */
-    post: operations['admin___announcements___create'];
+    post: operations['admin/announcements/create'];
   };
   '/admin/announcements/delete': {
     /**
@@ -109,7 +109,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:announcements*
      */
-    post: operations['admin___announcements___delete'];
+    post: operations['admin/announcements/delete'];
   };
   '/admin/announcements/list': {
     /**
@@ -118,7 +118,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:admin:announcements*
      */
-    post: operations['admin___announcements___list'];
+    post: operations['admin/announcements/list'];
   };
   '/admin/announcements/update': {
     /**
@@ -127,7 +127,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:announcements*
      */
-    post: operations['admin___announcements___update'];
+    post: operations['admin/announcements/update'];
   };
   '/admin/avatar-decorations/create': {
     /**
@@ -136,7 +136,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:avatar-decorations*
      */
-    post: operations['admin___avatar-decorations___create'];
+    post: operations['admin/avatar-decorations/create'];
   };
   '/admin/avatar-decorations/delete': {
     /**
@@ -145,7 +145,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:avatar-decorations*
      */
-    post: operations['admin___avatar-decorations___delete'];
+    post: operations['admin/avatar-decorations/delete'];
   };
   '/admin/avatar-decorations/list': {
     /**
@@ -154,7 +154,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:admin:avatar-decorations*
      */
-    post: operations['admin___avatar-decorations___list'];
+    post: operations['admin/avatar-decorations/list'];
   };
   '/admin/avatar-decorations/update': {
     /**
@@ -163,7 +163,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:avatar-decorations*
      */
-    post: operations['admin___avatar-decorations___update'];
+    post: operations['admin/avatar-decorations/update'];
   };
   '/admin/delete-all-files-of-a-user': {
     /**
@@ -172,7 +172,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:delete-all-files-of-a-user*
      */
-    post: operations['admin___delete-all-files-of-a-user'];
+    post: operations['admin/delete-all-files-of-a-user'];
   };
   '/admin/unset-user-avatar': {
     /**
@@ -181,7 +181,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:unset-user-avatar*
      */
-    post: operations['admin___unset-user-avatar'];
+    post: operations['admin/unset-user-avatar'];
   };
   '/admin/unset-user-banner': {
     /**
@@ -190,7 +190,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:unset-user-banner*
      */
-    post: operations['admin___unset-user-banner'];
+    post: operations['admin/unset-user-banner'];
   };
   '/admin/drive/clean-remote-files': {
     /**
@@ -199,7 +199,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:drive*
      */
-    post: operations['admin___drive___clean-remote-files'];
+    post: operations['admin/drive/clean-remote-files'];
   };
   '/admin/drive/cleanup': {
     /**
@@ -208,7 +208,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:drive*
      */
-    post: operations['admin___drive___cleanup'];
+    post: operations['admin/drive/cleanup'];
   };
   '/admin/drive/files': {
     /**
@@ -217,7 +217,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:admin:drive*
      */
-    post: operations['admin___drive___files'];
+    post: operations['admin/drive/files'];
   };
   '/admin/drive/show-file': {
     /**
@@ -226,7 +226,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:admin:drive*
      */
-    post: operations['admin___drive___show-file'];
+    post: operations['admin/drive/show-file'];
   };
   '/admin/emoji/add-aliases-bulk': {
     /**
@@ -235,7 +235,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:emoji*
      */
-    post: operations['admin___emoji___add-aliases-bulk'];
+    post: operations['admin/emoji/add-aliases-bulk'];
   };
   '/admin/emoji/add': {
     /**
@@ -244,7 +244,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:emoji*
      */
-    post: operations['admin___emoji___add'];
+    post: operations['admin/emoji/add'];
   };
   '/admin/emoji/copy': {
     /**
@@ -253,7 +253,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:emoji*
      */
-    post: operations['admin___emoji___copy'];
+    post: operations['admin/emoji/copy'];
   };
   '/admin/emoji/delete-bulk': {
     /**
@@ -262,7 +262,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:emoji*
      */
-    post: operations['admin___emoji___delete-bulk'];
+    post: operations['admin/emoji/delete-bulk'];
   };
   '/admin/emoji/delete': {
     /**
@@ -271,7 +271,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:emoji*
      */
-    post: operations['admin___emoji___delete'];
+    post: operations['admin/emoji/delete'];
   };
   '/admin/emoji/import-zip': {
     /**
@@ -281,7 +281,7 @@ export type paths = {
      * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
-    post: operations['admin___emoji___import-zip'];
+    post: operations['admin/emoji/import-zip'];
   };
   '/admin/emoji/list-remote': {
     /**
@@ -290,7 +290,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:admin:emoji*
      */
-    post: operations['admin___emoji___list-remote'];
+    post: operations['admin/emoji/list-remote'];
   };
   '/admin/emoji/list': {
     /**
@@ -299,7 +299,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:admin:emoji*
      */
-    post: operations['admin___emoji___list'];
+    post: operations['admin/emoji/list'];
   };
   '/admin/emoji/remove-aliases-bulk': {
     /**
@@ -308,7 +308,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:emoji*
      */
-    post: operations['admin___emoji___remove-aliases-bulk'];
+    post: operations['admin/emoji/remove-aliases-bulk'];
   };
   '/admin/emoji/set-aliases-bulk': {
     /**
@@ -317,7 +317,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:emoji*
      */
-    post: operations['admin___emoji___set-aliases-bulk'];
+    post: operations['admin/emoji/set-aliases-bulk'];
   };
   '/admin/emoji/set-category-bulk': {
     /**
@@ -326,7 +326,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:emoji*
      */
-    post: operations['admin___emoji___set-category-bulk'];
+    post: operations['admin/emoji/set-category-bulk'];
   };
   '/admin/emoji/set-license-bulk': {
     /**
@@ -335,7 +335,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:emoji*
      */
-    post: operations['admin___emoji___set-license-bulk'];
+    post: operations['admin/emoji/set-license-bulk'];
   };
   '/admin/emoji/update': {
     /**
@@ -344,7 +344,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:emoji*
      */
-    post: operations['admin___emoji___update'];
+    post: operations['admin/emoji/update'];
   };
   '/admin/federation/delete-all-files': {
     /**
@@ -353,7 +353,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:federation*
      */
-    post: operations['admin___federation___delete-all-files'];
+    post: operations['admin/federation/delete-all-files'];
   };
   '/admin/federation/refresh-remote-instance-metadata': {
     /**
@@ -362,7 +362,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:federation*
      */
-    post: operations['admin___federation___refresh-remote-instance-metadata'];
+    post: operations['admin/federation/refresh-remote-instance-metadata'];
   };
   '/admin/federation/remove-all-following': {
     /**
@@ -371,7 +371,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:federation*
      */
-    post: operations['admin___federation___remove-all-following'];
+    post: operations['admin/federation/remove-all-following'];
   };
   '/admin/federation/update-instance': {
     /**
@@ -380,7 +380,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:federation*
      */
-    post: operations['admin___federation___update-instance'];
+    post: operations['admin/federation/update-instance'];
   };
   '/admin/get-index-stats': {
     /**
@@ -389,7 +389,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:admin:index-stats*
      */
-    post: operations['admin___get-index-stats'];
+    post: operations['admin/get-index-stats'];
   };
   '/admin/get-table-stats': {
     /**
@@ -398,7 +398,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:admin:table-stats*
      */
-    post: operations['admin___get-table-stats'];
+    post: operations['admin/get-table-stats'];
   };
   '/admin/get-user-ips': {
     /**
@@ -407,7 +407,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:admin:user-ips*
      */
-    post: operations['admin___get-user-ips'];
+    post: operations['admin/get-user-ips'];
   };
   '/admin/invite/create': {
     /**
@@ -416,7 +416,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:invite-codes*
      */
-    post: operations['admin___invite___create'];
+    post: operations['admin/invite/create'];
   };
   '/admin/invite/list': {
     /**
@@ -425,7 +425,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:admin:invite-codes*
      */
-    post: operations['admin___invite___list'];
+    post: operations['admin/invite/list'];
   };
   '/admin/promo/create': {
     /**
@@ -434,7 +434,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:promo*
      */
-    post: operations['admin___promo___create'];
+    post: operations['admin/promo/create'];
   };
   '/admin/queue/clear': {
     /**
@@ -443,7 +443,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:queue*
      */
-    post: operations['admin___queue___clear'];
+    post: operations['admin/queue/clear'];
   };
   '/admin/queue/deliver-delayed': {
     /**
@@ -452,7 +452,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:admin:queue*
      */
-    post: operations['admin___queue___deliver-delayed'];
+    post: operations['admin/queue/deliver-delayed'];
   };
   '/admin/queue/inbox-delayed': {
     /**
@@ -461,7 +461,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:admin:queue*
      */
-    post: operations['admin___queue___inbox-delayed'];
+    post: operations['admin/queue/inbox-delayed'];
   };
   '/admin/queue/promote': {
     /**
@@ -470,7 +470,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:queue*
      */
-    post: operations['admin___queue___promote'];
+    post: operations['admin/queue/promote'];
   };
   '/admin/queue/stats': {
     /**
@@ -479,7 +479,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:admin:emoji*
      */
-    post: operations['admin___queue___stats'];
+    post: operations['admin/queue/stats'];
   };
   '/admin/relays/add': {
     /**
@@ -488,7 +488,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:relays*
      */
-    post: operations['admin___relays___add'];
+    post: operations['admin/relays/add'];
   };
   '/admin/relays/list': {
     /**
@@ -497,7 +497,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:admin:relays*
      */
-    post: operations['admin___relays___list'];
+    post: operations['admin/relays/list'];
   };
   '/admin/relays/remove': {
     /**
@@ -506,7 +506,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:relays*
      */
-    post: operations['admin___relays___remove'];
+    post: operations['admin/relays/remove'];
   };
   '/admin/reset-password': {
     /**
@@ -515,7 +515,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:reset-password*
      */
-    post: operations['admin___reset-password'];
+    post: operations['admin/reset-password'];
   };
   '/admin/resolve-abuse-user-report': {
     /**
@@ -524,7 +524,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:resolve-abuse-user-report*
      */
-    post: operations['admin___resolve-abuse-user-report'];
+    post: operations['admin/resolve-abuse-user-report'];
   };
   '/admin/send-email': {
     /**
@@ -533,7 +533,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:send-email*
      */
-    post: operations['admin___send-email'];
+    post: operations['admin/send-email'];
   };
   '/admin/server-info': {
     /**
@@ -542,7 +542,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:admin:server-info*
      */
-    post: operations['admin___server-info'];
+    post: operations['admin/server-info'];
   };
   '/admin/show-moderation-logs': {
     /**
@@ -551,7 +551,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:admin:show-moderation-log*
      */
-    post: operations['admin___show-moderation-logs'];
+    post: operations['admin/show-moderation-logs'];
   };
   '/admin/show-user': {
     /**
@@ -560,7 +560,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:admin:show-user*
      */
-    post: operations['admin___show-user'];
+    post: operations['admin/show-user'];
   };
   '/admin/show-users': {
     /**
@@ -569,7 +569,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:admin:show-users*
      */
-    post: operations['admin___show-users'];
+    post: operations['admin/show-users'];
   };
   '/admin/suspend-user': {
     /**
@@ -578,7 +578,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:suspend-user*
      */
-    post: operations['admin___suspend-user'];
+    post: operations['admin/suspend-user'];
   };
   '/admin/unsuspend-user': {
     /**
@@ -587,7 +587,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:unsuspend-user*
      */
-    post: operations['admin___unsuspend-user'];
+    post: operations['admin/unsuspend-user'];
   };
   '/admin/update-meta': {
     /**
@@ -596,7 +596,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:meta*
      */
-    post: operations['admin___update-meta'];
+    post: operations['admin/update-meta'];
   };
   '/admin/delete-account': {
     /**
@@ -605,7 +605,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:delete-account*
      */
-    post: operations['admin___delete-account'];
+    post: operations['admin/delete-account'];
   };
   '/admin/update-user-note': {
     /**
@@ -614,7 +614,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:user-note*
      */
-    post: operations['admin___update-user-note'];
+    post: operations['admin/update-user-note'];
   };
   '/admin/roles/create': {
     /**
@@ -623,7 +623,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:roles*
      */
-    post: operations['admin___roles___create'];
+    post: operations['admin/roles/create'];
   };
   '/admin/roles/delete': {
     /**
@@ -632,7 +632,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:roles*
      */
-    post: operations['admin___roles___delete'];
+    post: operations['admin/roles/delete'];
   };
   '/admin/roles/list': {
     /**
@@ -641,7 +641,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:admin:roles*
      */
-    post: operations['admin___roles___list'];
+    post: operations['admin/roles/list'];
   };
   '/admin/roles/show': {
     /**
@@ -650,7 +650,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:admin:roles*
      */
-    post: operations['admin___roles___show'];
+    post: operations['admin/roles/show'];
   };
   '/admin/roles/update': {
     /**
@@ -659,7 +659,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:roles*
      */
-    post: operations['admin___roles___update'];
+    post: operations['admin/roles/update'];
   };
   '/admin/roles/assign': {
     /**
@@ -668,7 +668,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:roles*
      */
-    post: operations['admin___roles___assign'];
+    post: operations['admin/roles/assign'];
   };
   '/admin/roles/unassign': {
     /**
@@ -677,7 +677,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:roles*
      */
-    post: operations['admin___roles___unassign'];
+    post: operations['admin/roles/unassign'];
   };
   '/admin/roles/update-default-policies': {
     /**
@@ -686,7 +686,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:admin:roles*
      */
-    post: operations['admin___roles___update-default-policies'];
+    post: operations['admin/roles/update-default-policies'];
   };
   '/admin/roles/users': {
     /**
@@ -695,7 +695,7 @@ export type paths = {
      *
      * **Credential required**: *No* / **Permission**: *read:admin:roles*
      */
-    post: operations['admin___roles___users'];
+    post: operations['admin/roles/users'];
   };
   '/announcements': {
     /**
@@ -713,7 +713,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:account*
      */
-    post: operations['antennas___create'];
+    post: operations['antennas/create'];
   };
   '/antennas/delete': {
     /**
@@ -722,7 +722,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:account*
      */
-    post: operations['antennas___delete'];
+    post: operations['antennas/delete'];
   };
   '/antennas/list': {
     /**
@@ -731,7 +731,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:account*
      */
-    post: operations['antennas___list'];
+    post: operations['antennas/list'];
   };
   '/antennas/notes': {
     /**
@@ -740,7 +740,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:account*
      */
-    post: operations['antennas___notes'];
+    post: operations['antennas/notes'];
   };
   '/antennas/show': {
     /**
@@ -749,7 +749,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:account*
      */
-    post: operations['antennas___show'];
+    post: operations['antennas/show'];
   };
   '/antennas/update': {
     /**
@@ -758,7 +758,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:account*
      */
-    post: operations['antennas___update'];
+    post: operations['antennas/update'];
   };
   '/ap/get': {
     /**
@@ -767,7 +767,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:federation*
      */
-    post: operations['ap___get'];
+    post: operations['ap/get'];
   };
   '/ap/show': {
     /**
@@ -776,7 +776,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:account*
      */
-    post: operations['ap___show'];
+    post: operations['ap/show'];
   };
   '/app/create': {
     /**
@@ -785,7 +785,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['app___create'];
+    post: operations['app/create'];
   };
   '/app/show': {
     /**
@@ -794,7 +794,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['app___show'];
+    post: operations['app/show'];
   };
   '/auth/accept': {
     /**
@@ -804,7 +804,7 @@ export type paths = {
      * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
-    post: operations['auth___accept'];
+    post: operations['auth/accept'];
   };
   '/auth/session/generate': {
     /**
@@ -813,7 +813,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['auth___session___generate'];
+    post: operations['auth/session/generate'];
   };
   '/auth/session/show': {
     /**
@@ -822,7 +822,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['auth___session___show'];
+    post: operations['auth/session/show'];
   };
   '/auth/session/userkey': {
     /**
@@ -831,7 +831,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['auth___session___userkey'];
+    post: operations['auth/session/userkey'];
   };
   '/blocking/create': {
     /**
@@ -840,7 +840,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:blocks*
      */
-    post: operations['blocking___create'];
+    post: operations['blocking/create'];
   };
   '/blocking/delete': {
     /**
@@ -849,7 +849,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:blocks*
      */
-    post: operations['blocking___delete'];
+    post: operations['blocking/delete'];
   };
   '/blocking/list': {
     /**
@@ -858,7 +858,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:blocks*
      */
-    post: operations['blocking___list'];
+    post: operations['blocking/list'];
   };
   '/channels/create': {
     /**
@@ -867,7 +867,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:channels*
      */
-    post: operations['channels___create'];
+    post: operations['channels/create'];
   };
   '/channels/featured': {
     /**
@@ -876,7 +876,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['channels___featured'];
+    post: operations['channels/featured'];
   };
   '/channels/follow': {
     /**
@@ -885,7 +885,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:channels*
      */
-    post: operations['channels___follow'];
+    post: operations['channels/follow'];
   };
   '/channels/followed': {
     /**
@@ -894,7 +894,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:channels*
      */
-    post: operations['channels___followed'];
+    post: operations['channels/followed'];
   };
   '/channels/owned': {
     /**
@@ -903,7 +903,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:channels*
      */
-    post: operations['channels___owned'];
+    post: operations['channels/owned'];
   };
   '/channels/show': {
     /**
@@ -912,7 +912,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['channels___show'];
+    post: operations['channels/show'];
   };
   '/channels/timeline': {
     /**
@@ -921,7 +921,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['channels___timeline'];
+    post: operations['channels/timeline'];
   };
   '/channels/unfollow': {
     /**
@@ -930,7 +930,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:channels*
      */
-    post: operations['channels___unfollow'];
+    post: operations['channels/unfollow'];
   };
   '/channels/update': {
     /**
@@ -939,7 +939,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:channels*
      */
-    post: operations['channels___update'];
+    post: operations['channels/update'];
   };
   '/channels/favorite': {
     /**
@@ -948,7 +948,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:channels*
      */
-    post: operations['channels___favorite'];
+    post: operations['channels/favorite'];
   };
   '/channels/unfavorite': {
     /**
@@ -957,7 +957,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:channels*
      */
-    post: operations['channels___unfavorite'];
+    post: operations['channels/unfavorite'];
   };
   '/channels/my-favorites': {
     /**
@@ -966,7 +966,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:channels*
      */
-    post: operations['channels___my-favorites'];
+    post: operations['channels/my-favorites'];
   };
   '/channels/search': {
     /**
@@ -975,7 +975,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['channels___search'];
+    post: operations['channels/search'];
   };
   '/charts/active-users': {
     /**
@@ -984,14 +984,14 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    get: operations['charts___active-users'];
+    get: operations['charts/active-users'];
     /**
      * charts/active-users
      * @description No description provided.
      *
      * **Credential required**: *No*
      */
-    post: operations['charts___active-users'];
+    post: operations['charts/active-users'];
   };
   '/charts/ap-request': {
     /**
@@ -1000,14 +1000,14 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    get: operations['charts___ap-request'];
+    get: operations['charts/ap-request'];
     /**
      * charts/ap-request
      * @description No description provided.
      *
      * **Credential required**: *No*
      */
-    post: operations['charts___ap-request'];
+    post: operations['charts/ap-request'];
   };
   '/charts/drive': {
     /**
@@ -1016,14 +1016,14 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    get: operations['charts___drive'];
+    get: operations['charts/drive'];
     /**
      * charts/drive
      * @description No description provided.
      *
      * **Credential required**: *No*
      */
-    post: operations['charts___drive'];
+    post: operations['charts/drive'];
   };
   '/charts/federation': {
     /**
@@ -1032,14 +1032,14 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    get: operations['charts___federation'];
+    get: operations['charts/federation'];
     /**
      * charts/federation
      * @description No description provided.
      *
      * **Credential required**: *No*
      */
-    post: operations['charts___federation'];
+    post: operations['charts/federation'];
   };
   '/charts/instance': {
     /**
@@ -1048,14 +1048,14 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    get: operations['charts___instance'];
+    get: operations['charts/instance'];
     /**
      * charts/instance
      * @description No description provided.
      *
      * **Credential required**: *No*
      */
-    post: operations['charts___instance'];
+    post: operations['charts/instance'];
   };
   '/charts/notes': {
     /**
@@ -1064,14 +1064,14 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    get: operations['charts___notes'];
+    get: operations['charts/notes'];
     /**
      * charts/notes
      * @description No description provided.
      *
      * **Credential required**: *No*
      */
-    post: operations['charts___notes'];
+    post: operations['charts/notes'];
   };
   '/charts/user/drive': {
     /**
@@ -1080,14 +1080,14 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    get: operations['charts___user___drive'];
+    get: operations['charts/user/drive'];
     /**
      * charts/user/drive
      * @description No description provided.
      *
      * **Credential required**: *No*
      */
-    post: operations['charts___user___drive'];
+    post: operations['charts/user/drive'];
   };
   '/charts/user/following': {
     /**
@@ -1096,14 +1096,14 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    get: operations['charts___user___following'];
+    get: operations['charts/user/following'];
     /**
      * charts/user/following
      * @description No description provided.
      *
      * **Credential required**: *No*
      */
-    post: operations['charts___user___following'];
+    post: operations['charts/user/following'];
   };
   '/charts/user/notes': {
     /**
@@ -1112,14 +1112,14 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    get: operations['charts___user___notes'];
+    get: operations['charts/user/notes'];
     /**
      * charts/user/notes
      * @description No description provided.
      *
      * **Credential required**: *No*
      */
-    post: operations['charts___user___notes'];
+    post: operations['charts/user/notes'];
   };
   '/charts/user/pv': {
     /**
@@ -1128,14 +1128,14 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    get: operations['charts___user___pv'];
+    get: operations['charts/user/pv'];
     /**
      * charts/user/pv
      * @description No description provided.
      *
      * **Credential required**: *No*
      */
-    post: operations['charts___user___pv'];
+    post: operations['charts/user/pv'];
   };
   '/charts/user/reactions': {
     /**
@@ -1144,14 +1144,14 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    get: operations['charts___user___reactions'];
+    get: operations['charts/user/reactions'];
     /**
      * charts/user/reactions
      * @description No description provided.
      *
      * **Credential required**: *No*
      */
-    post: operations['charts___user___reactions'];
+    post: operations['charts/user/reactions'];
   };
   '/charts/users': {
     /**
@@ -1160,14 +1160,14 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    get: operations['charts___users'];
+    get: operations['charts/users'];
     /**
      * charts/users
      * @description No description provided.
      *
      * **Credential required**: *No*
      */
-    post: operations['charts___users'];
+    post: operations['charts/users'];
   };
   '/clips/add-note': {
     /**
@@ -1176,7 +1176,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:account*
      */
-    post: operations['clips___add-note'];
+    post: operations['clips/add-note'];
   };
   '/clips/remove-note': {
     /**
@@ -1185,7 +1185,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:account*
      */
-    post: operations['clips___remove-note'];
+    post: operations['clips/remove-note'];
   };
   '/clips/create': {
     /**
@@ -1194,7 +1194,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:account*
      */
-    post: operations['clips___create'];
+    post: operations['clips/create'];
   };
   '/clips/delete': {
     /**
@@ -1203,7 +1203,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:account*
      */
-    post: operations['clips___delete'];
+    post: operations['clips/delete'];
   };
   '/clips/list': {
     /**
@@ -1212,7 +1212,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:account*
      */
-    post: operations['clips___list'];
+    post: operations['clips/list'];
   };
   '/clips/notes': {
     /**
@@ -1221,7 +1221,7 @@ export type paths = {
      *
      * **Credential required**: *No* / **Permission**: *read:account*
      */
-    post: operations['clips___notes'];
+    post: operations['clips/notes'];
   };
   '/clips/show': {
     /**
@@ -1230,7 +1230,7 @@ export type paths = {
      *
      * **Credential required**: *No* / **Permission**: *read:account*
      */
-    post: operations['clips___show'];
+    post: operations['clips/show'];
   };
   '/clips/update': {
     /**
@@ -1239,7 +1239,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:account*
      */
-    post: operations['clips___update'];
+    post: operations['clips/update'];
   };
   '/clips/favorite': {
     /**
@@ -1248,7 +1248,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:clip-favorite*
      */
-    post: operations['clips___favorite'];
+    post: operations['clips/favorite'];
   };
   '/clips/unfavorite': {
     /**
@@ -1257,7 +1257,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:clip-favorite*
      */
-    post: operations['clips___unfavorite'];
+    post: operations['clips/unfavorite'];
   };
   '/clips/my-favorites': {
     /**
@@ -1266,7 +1266,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:clip-favorite*
      */
-    post: operations['clips___my-favorites'];
+    post: operations['clips/my-favorites'];
   };
   '/drive': {
     /**
@@ -1284,7 +1284,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:drive*
      */
-    post: operations['drive___files'];
+    post: operations['drive/files'];
   };
   '/drive/files/attached-notes': {
     /**
@@ -1293,7 +1293,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:drive*
      */
-    post: operations['drive___files___attached-notes'];
+    post: operations['drive/files/attached-notes'];
   };
   '/drive/files/check-existence': {
     /**
@@ -1302,7 +1302,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:drive*
      */
-    post: operations['drive___files___check-existence'];
+    post: operations['drive/files/check-existence'];
   };
   '/drive/files/create': {
     /**
@@ -1311,7 +1311,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:drive*
      */
-    post: operations['drive___files___create'];
+    post: operations['drive/files/create'];
   };
   '/drive/files/delete': {
     /**
@@ -1320,7 +1320,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:drive*
      */
-    post: operations['drive___files___delete'];
+    post: operations['drive/files/delete'];
   };
   '/drive/files/find-by-hash': {
     /**
@@ -1329,7 +1329,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:drive*
      */
-    post: operations['drive___files___find-by-hash'];
+    post: operations['drive/files/find-by-hash'];
   };
   '/drive/files/find': {
     /**
@@ -1338,7 +1338,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:drive*
      */
-    post: operations['drive___files___find'];
+    post: operations['drive/files/find'];
   };
   '/drive/files/show': {
     /**
@@ -1347,7 +1347,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:drive*
      */
-    post: operations['drive___files___show'];
+    post: operations['drive/files/show'];
   };
   '/drive/files/update': {
     /**
@@ -1356,7 +1356,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:drive*
      */
-    post: operations['drive___files___update'];
+    post: operations['drive/files/update'];
   };
   '/drive/files/upload-from-url': {
     /**
@@ -1365,7 +1365,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:drive*
      */
-    post: operations['drive___files___upload-from-url'];
+    post: operations['drive/files/upload-from-url'];
   };
   '/drive/folders': {
     /**
@@ -1374,7 +1374,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:drive*
      */
-    post: operations['drive___folders'];
+    post: operations['drive/folders'];
   };
   '/drive/folders/create': {
     /**
@@ -1383,7 +1383,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:drive*
      */
-    post: operations['drive___folders___create'];
+    post: operations['drive/folders/create'];
   };
   '/drive/folders/delete': {
     /**
@@ -1392,7 +1392,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:drive*
      */
-    post: operations['drive___folders___delete'];
+    post: operations['drive/folders/delete'];
   };
   '/drive/folders/find': {
     /**
@@ -1401,7 +1401,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:drive*
      */
-    post: operations['drive___folders___find'];
+    post: operations['drive/folders/find'];
   };
   '/drive/folders/show': {
     /**
@@ -1410,7 +1410,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:drive*
      */
-    post: operations['drive___folders___show'];
+    post: operations['drive/folders/show'];
   };
   '/drive/folders/update': {
     /**
@@ -1419,7 +1419,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:drive*
      */
-    post: operations['drive___folders___update'];
+    post: operations['drive/folders/update'];
   };
   '/drive/stream': {
     /**
@@ -1428,7 +1428,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:drive*
      */
-    post: operations['drive___stream'];
+    post: operations['drive/stream'];
   };
   '/email-address/available': {
     /**
@@ -1437,7 +1437,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['email-address___available'];
+    post: operations['email-address/available'];
   };
   '/endpoint': {
     /**
@@ -1474,7 +1474,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['federation___followers'];
+    post: operations['federation/followers'];
   };
   '/federation/following': {
     /**
@@ -1483,7 +1483,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['federation___following'];
+    post: operations['federation/following'];
   };
   '/federation/instances': {
     /**
@@ -1492,14 +1492,14 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    get: operations['federation___instances'];
+    get: operations['federation/instances'];
     /**
      * federation/instances
      * @description No description provided.
      *
      * **Credential required**: *No*
      */
-    post: operations['federation___instances'];
+    post: operations['federation/instances'];
   };
   '/federation/show-instance': {
     /**
@@ -1508,7 +1508,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['federation___show-instance'];
+    post: operations['federation/show-instance'];
   };
   '/federation/update-remote-user': {
     /**
@@ -1517,7 +1517,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['federation___update-remote-user'];
+    post: operations['federation/update-remote-user'];
   };
   '/federation/users': {
     /**
@@ -1526,7 +1526,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['federation___users'];
+    post: operations['federation/users'];
   };
   '/federation/stats': {
     /**
@@ -1535,14 +1535,14 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    get: operations['federation___stats'];
+    get: operations['federation/stats'];
     /**
      * federation/stats
      * @description No description provided.
      *
      * **Credential required**: *No*
      */
-    post: operations['federation___stats'];
+    post: operations['federation/stats'];
   };
   '/following/create': {
     /**
@@ -1551,7 +1551,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:following*
      */
-    post: operations['following___create'];
+    post: operations['following/create'];
   };
   '/following/delete': {
     /**
@@ -1560,7 +1560,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:following*
      */
-    post: operations['following___delete'];
+    post: operations['following/delete'];
   };
   '/following/update': {
     /**
@@ -1569,7 +1569,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:following*
      */
-    post: operations['following___update'];
+    post: operations['following/update'];
   };
   '/following/update-all': {
     /**
@@ -1578,7 +1578,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:following*
      */
-    post: operations['following___update-all'];
+    post: operations['following/update-all'];
   };
   '/following/invalidate': {
     /**
@@ -1587,7 +1587,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:following*
      */
-    post: operations['following___invalidate'];
+    post: operations['following/invalidate'];
   };
   '/following/requests/accept': {
     /**
@@ -1596,7 +1596,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:following*
      */
-    post: operations['following___requests___accept'];
+    post: operations['following/requests/accept'];
   };
   '/following/requests/cancel': {
     /**
@@ -1605,7 +1605,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:following*
      */
-    post: operations['following___requests___cancel'];
+    post: operations['following/requests/cancel'];
   };
   '/following/requests/list': {
     /**
@@ -1614,7 +1614,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:following*
      */
-    post: operations['following___requests___list'];
+    post: operations['following/requests/list'];
   };
   '/following/requests/reject': {
     /**
@@ -1623,7 +1623,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:following*
      */
-    post: operations['following___requests___reject'];
+    post: operations['following/requests/reject'];
   };
   '/gallery/featured': {
     /**
@@ -1632,7 +1632,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['gallery___featured'];
+    post: operations['gallery/featured'];
   };
   '/gallery/popular': {
     /**
@@ -1641,7 +1641,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['gallery___popular'];
+    post: operations['gallery/popular'];
   };
   '/gallery/posts': {
     /**
@@ -1650,7 +1650,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['gallery___posts'];
+    post: operations['gallery/posts'];
   };
   '/gallery/posts/create': {
     /**
@@ -1659,7 +1659,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:gallery*
      */
-    post: operations['gallery___posts___create'];
+    post: operations['gallery/posts/create'];
   };
   '/gallery/posts/delete': {
     /**
@@ -1668,7 +1668,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:gallery*
      */
-    post: operations['gallery___posts___delete'];
+    post: operations['gallery/posts/delete'];
   };
   '/gallery/posts/like': {
     /**
@@ -1677,7 +1677,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:gallery-likes*
      */
-    post: operations['gallery___posts___like'];
+    post: operations['gallery/posts/like'];
   };
   '/gallery/posts/show': {
     /**
@@ -1686,7 +1686,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['gallery___posts___show'];
+    post: operations['gallery/posts/show'];
   };
   '/gallery/posts/unlike': {
     /**
@@ -1695,7 +1695,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:gallery-likes*
      */
-    post: operations['gallery___posts___unlike'];
+    post: operations['gallery/posts/unlike'];
   };
   '/gallery/posts/update': {
     /**
@@ -1704,7 +1704,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:gallery*
      */
-    post: operations['gallery___posts___update'];
+    post: operations['gallery/posts/update'];
   };
   '/get-online-users-count': {
     /**
@@ -1738,7 +1738,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['hashtags___list'];
+    post: operations['hashtags/list'];
   };
   '/hashtags/search': {
     /**
@@ -1747,7 +1747,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['hashtags___search'];
+    post: operations['hashtags/search'];
   };
   '/hashtags/show': {
     /**
@@ -1756,7 +1756,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['hashtags___show'];
+    post: operations['hashtags/show'];
   };
   '/hashtags/trend': {
     /**
@@ -1765,14 +1765,14 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    get: operations['hashtags___trend'];
+    get: operations['hashtags/trend'];
     /**
      * hashtags/trend
      * @description No description provided.
      *
      * **Credential required**: *No*
      */
-    post: operations['hashtags___trend'];
+    post: operations['hashtags/trend'];
   };
   '/hashtags/users': {
     /**
@@ -1781,7 +1781,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['hashtags___users'];
+    post: operations['hashtags/users'];
   };
   '/i': {
     /**
@@ -1800,7 +1800,7 @@ export type paths = {
      * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
-    post: operations['i___2fa___done'];
+    post: operations['i/2fa/done'];
   };
   '/i/2fa/key-done': {
     /**
@@ -1810,7 +1810,7 @@ export type paths = {
      * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
-    post: operations['i___2fa___key-done'];
+    post: operations['i/2fa/key-done'];
   };
   '/i/2fa/password-less': {
     /**
@@ -1820,7 +1820,7 @@ export type paths = {
      * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
-    post: operations['i___2fa___password-less'];
+    post: operations['i/2fa/password-less'];
   };
   '/i/2fa/register-key': {
     /**
@@ -1830,7 +1830,7 @@ export type paths = {
      * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
-    post: operations['i___2fa___register-key'];
+    post: operations['i/2fa/register-key'];
   };
   '/i/2fa/register': {
     /**
@@ -1840,7 +1840,7 @@ export type paths = {
      * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
-    post: operations['i___2fa___register'];
+    post: operations['i/2fa/register'];
   };
   '/i/2fa/update-key': {
     /**
@@ -1850,7 +1850,7 @@ export type paths = {
      * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
-    post: operations['i___2fa___update-key'];
+    post: operations['i/2fa/update-key'];
   };
   '/i/2fa/remove-key': {
     /**
@@ -1860,7 +1860,7 @@ export type paths = {
      * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
-    post: operations['i___2fa___remove-key'];
+    post: operations['i/2fa/remove-key'];
   };
   '/i/2fa/unregister': {
     /**
@@ -1870,7 +1870,7 @@ export type paths = {
      * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
-    post: operations['i___2fa___unregister'];
+    post: operations['i/2fa/unregister'];
   };
   '/i/apps': {
     /**
@@ -1880,7 +1880,7 @@ export type paths = {
      * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
-    post: operations['i___apps'];
+    post: operations['i/apps'];
   };
   '/i/authorized-apps': {
     /**
@@ -1890,7 +1890,7 @@ export type paths = {
      * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
-    post: operations['i___authorized-apps'];
+    post: operations['i/authorized-apps'];
   };
   '/i/claim-achievement': {
     /**
@@ -1899,7 +1899,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:account*
      */
-    post: operations['i___claim-achievement'];
+    post: operations['i/claim-achievement'];
   };
   '/i/change-password': {
     /**
@@ -1909,7 +1909,7 @@ export type paths = {
      * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
-    post: operations['i___change-password'];
+    post: operations['i/change-password'];
   };
   '/i/delete-account': {
     /**
@@ -1919,7 +1919,7 @@ export type paths = {
      * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
-    post: operations['i___delete-account'];
+    post: operations['i/delete-account'];
   };
   '/i/export-blocking': {
     /**
@@ -1929,7 +1929,7 @@ export type paths = {
      * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
-    post: operations['i___export-blocking'];
+    post: operations['i/export-blocking'];
   };
   '/i/export-following': {
     /**
@@ -1939,7 +1939,7 @@ export type paths = {
      * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
-    post: operations['i___export-following'];
+    post: operations['i/export-following'];
   };
   '/i/export-mute': {
     /**
@@ -1949,7 +1949,7 @@ export type paths = {
      * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
-    post: operations['i___export-mute'];
+    post: operations['i/export-mute'];
   };
   '/i/export-notes': {
     /**
@@ -1959,7 +1959,7 @@ export type paths = {
      * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
-    post: operations['i___export-notes'];
+    post: operations['i/export-notes'];
   };
   '/i/export-clips': {
     /**
@@ -1969,7 +1969,7 @@ export type paths = {
      * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
-    post: operations['i___export-clips'];
+    post: operations['i/export-clips'];
   };
   '/i/export-favorites': {
     /**
@@ -1979,7 +1979,7 @@ export type paths = {
      * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
-    post: operations['i___export-favorites'];
+    post: operations['i/export-favorites'];
   };
   '/i/export-user-lists': {
     /**
@@ -1989,7 +1989,7 @@ export type paths = {
      * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
-    post: operations['i___export-user-lists'];
+    post: operations['i/export-user-lists'];
   };
   '/i/export-antennas': {
     /**
@@ -1999,7 +1999,7 @@ export type paths = {
      * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
-    post: operations['i___export-antennas'];
+    post: operations['i/export-antennas'];
   };
   '/i/favorites': {
     /**
@@ -2008,7 +2008,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:favorites*
      */
-    post: operations['i___favorites'];
+    post: operations['i/favorites'];
   };
   '/i/gallery/likes': {
     /**
@@ -2017,7 +2017,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:gallery-likes*
      */
-    post: operations['i___gallery___likes'];
+    post: operations['i/gallery/likes'];
   };
   '/i/gallery/posts': {
     /**
@@ -2026,7 +2026,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:gallery*
      */
-    post: operations['i___gallery___posts'];
+    post: operations['i/gallery/posts'];
   };
   '/i/import-blocking': {
     /**
@@ -2036,7 +2036,7 @@ export type paths = {
      * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
-    post: operations['i___import-blocking'];
+    post: operations['i/import-blocking'];
   };
   '/i/import-following': {
     /**
@@ -2046,7 +2046,7 @@ export type paths = {
      * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
-    post: operations['i___import-following'];
+    post: operations['i/import-following'];
   };
   '/i/import-muting': {
     /**
@@ -2056,7 +2056,7 @@ export type paths = {
      * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
-    post: operations['i___import-muting'];
+    post: operations['i/import-muting'];
   };
   '/i/import-user-lists': {
     /**
@@ -2066,7 +2066,7 @@ export type paths = {
      * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
-    post: operations['i___import-user-lists'];
+    post: operations['i/import-user-lists'];
   };
   '/i/import-antennas': {
     /**
@@ -2076,7 +2076,7 @@ export type paths = {
      * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
-    post: operations['i___import-antennas'];
+    post: operations['i/import-antennas'];
   };
   '/i/notifications': {
     /**
@@ -2085,7 +2085,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:notifications*
      */
-    post: operations['i___notifications'];
+    post: operations['i/notifications'];
   };
   '/i/notifications-grouped': {
     /**
@@ -2094,7 +2094,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:notifications*
      */
-    post: operations['i___notifications-grouped'];
+    post: operations['i/notifications-grouped'];
   };
   '/i/page-likes': {
     /**
@@ -2103,7 +2103,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:page-likes*
      */
-    post: operations['i___page-likes'];
+    post: operations['i/page-likes'];
   };
   '/i/pages': {
     /**
@@ -2112,7 +2112,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:pages*
      */
-    post: operations['i___pages'];
+    post: operations['i/pages'];
   };
   '/i/pin': {
     /**
@@ -2121,7 +2121,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:account*
      */
-    post: operations['i___pin'];
+    post: operations['i/pin'];
   };
   '/i/read-all-unread-notes': {
     /**
@@ -2130,7 +2130,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:account*
      */
-    post: operations['i___read-all-unread-notes'];
+    post: operations['i/read-all-unread-notes'];
   };
   '/i/read-announcement': {
     /**
@@ -2139,7 +2139,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:account*
      */
-    post: operations['i___read-announcement'];
+    post: operations['i/read-announcement'];
   };
   '/i/regenerate-token': {
     /**
@@ -2149,7 +2149,7 @@ export type paths = {
      * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
-    post: operations['i___regenerate-token'];
+    post: operations['i/regenerate-token'];
   };
   '/i/registry/get-all': {
     /**
@@ -2158,7 +2158,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:account*
      */
-    post: operations['i___registry___get-all'];
+    post: operations['i/registry/get-all'];
   };
   '/i/registry/get-detail': {
     /**
@@ -2167,7 +2167,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:account*
      */
-    post: operations['i___registry___get-detail'];
+    post: operations['i/registry/get-detail'];
   };
   '/i/registry/get': {
     /**
@@ -2176,7 +2176,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:account*
      */
-    post: operations['i___registry___get'];
+    post: operations['i/registry/get'];
   };
   '/i/registry/keys-with-type': {
     /**
@@ -2185,7 +2185,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:account*
      */
-    post: operations['i___registry___keys-with-type'];
+    post: operations['i/registry/keys-with-type'];
   };
   '/i/registry/keys': {
     /**
@@ -2194,7 +2194,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:account*
      */
-    post: operations['i___registry___keys'];
+    post: operations['i/registry/keys'];
   };
   '/i/registry/remove': {
     /**
@@ -2203,7 +2203,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:account*
      */
-    post: operations['i___registry___remove'];
+    post: operations['i/registry/remove'];
   };
   '/i/registry/scopes-with-domain': {
     /**
@@ -2213,7 +2213,7 @@ export type paths = {
      * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
-    post: operations['i___registry___scopes-with-domain'];
+    post: operations['i/registry/scopes-with-domain'];
   };
   '/i/registry/set': {
     /**
@@ -2222,7 +2222,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:account*
      */
-    post: operations['i___registry___set'];
+    post: operations['i/registry/set'];
   };
   '/i/revoke-token': {
     /**
@@ -2232,7 +2232,7 @@ export type paths = {
      * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
-    post: operations['i___revoke-token'];
+    post: operations['i/revoke-token'];
   };
   '/i/signin-history': {
     /**
@@ -2242,7 +2242,7 @@ export type paths = {
      * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
-    post: operations['i___signin-history'];
+    post: operations['i/signin-history'];
   };
   '/i/unpin': {
     /**
@@ -2251,7 +2251,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:account*
      */
-    post: operations['i___unpin'];
+    post: operations['i/unpin'];
   };
   '/i/update-email': {
     /**
@@ -2261,7 +2261,7 @@ export type paths = {
      * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
-    post: operations['i___update-email'];
+    post: operations['i/update-email'];
   };
   '/i/update': {
     /**
@@ -2270,7 +2270,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:account*
      */
-    post: operations['i___update'];
+    post: operations['i/update'];
   };
   '/i/move': {
     /**
@@ -2280,7 +2280,7 @@ export type paths = {
      * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
-    post: operations['i___move'];
+    post: operations['i/move'];
   };
   '/i/webhooks/create': {
     /**
@@ -2289,7 +2289,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:account*
      */
-    post: operations['i___webhooks___create'];
+    post: operations['i/webhooks/create'];
   };
   '/i/webhooks/list': {
     /**
@@ -2298,7 +2298,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:account*
      */
-    post: operations['i___webhooks___list'];
+    post: operations['i/webhooks/list'];
   };
   '/i/webhooks/show': {
     /**
@@ -2307,7 +2307,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:account*
      */
-    post: operations['i___webhooks___show'];
+    post: operations['i/webhooks/show'];
   };
   '/i/webhooks/update': {
     /**
@@ -2316,7 +2316,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:account*
      */
-    post: operations['i___webhooks___update'];
+    post: operations['i/webhooks/update'];
   };
   '/i/webhooks/delete': {
     /**
@@ -2325,7 +2325,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:account*
      */
-    post: operations['i___webhooks___delete'];
+    post: operations['i/webhooks/delete'];
   };
   '/invite/create': {
     /**
@@ -2334,7 +2334,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:invite-codes*
      */
-    post: operations['invite___create'];
+    post: operations['invite/create'];
   };
   '/invite/delete': {
     /**
@@ -2343,7 +2343,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:invite-codes*
      */
-    post: operations['invite___delete'];
+    post: operations['invite/delete'];
   };
   '/invite/list': {
     /**
@@ -2352,7 +2352,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:invite-codes*
      */
-    post: operations['invite___list'];
+    post: operations['invite/list'];
   };
   '/invite/limit': {
     /**
@@ -2361,7 +2361,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:invite-codes*
      */
-    post: operations['invite___limit'];
+    post: operations['invite/limit'];
   };
   '/meta': {
     /**
@@ -2412,7 +2412,7 @@ export type paths = {
      * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
-    post: operations['miauth___gen-token'];
+    post: operations['miauth/gen-token'];
   };
   '/mute/create': {
     /**
@@ -2421,7 +2421,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:mutes*
      */
-    post: operations['mute___create'];
+    post: operations['mute/create'];
   };
   '/mute/delete': {
     /**
@@ -2430,7 +2430,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:mutes*
      */
-    post: operations['mute___delete'];
+    post: operations['mute/delete'];
   };
   '/mute/list': {
     /**
@@ -2439,7 +2439,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:mutes*
      */
-    post: operations['mute___list'];
+    post: operations['mute/list'];
   };
   '/renote-mute/create': {
     /**
@@ -2448,7 +2448,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:mutes*
      */
-    post: operations['renote-mute___create'];
+    post: operations['renote-mute/create'];
   };
   '/renote-mute/delete': {
     /**
@@ -2457,7 +2457,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:mutes*
      */
-    post: operations['renote-mute___delete'];
+    post: operations['renote-mute/delete'];
   };
   '/renote-mute/list': {
     /**
@@ -2466,7 +2466,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:mutes*
      */
-    post: operations['renote-mute___list'];
+    post: operations['renote-mute/list'];
   };
   '/my/apps': {
     /**
@@ -2475,7 +2475,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:account*
      */
-    post: operations['my___apps'];
+    post: operations['my/apps'];
   };
   '/notes': {
     /**
@@ -2493,7 +2493,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['notes___children'];
+    post: operations['notes/children'];
   };
   '/notes/clips': {
     /**
@@ -2502,7 +2502,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['notes___clips'];
+    post: operations['notes/clips'];
   };
   '/notes/conversation': {
     /**
@@ -2511,7 +2511,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['notes___conversation'];
+    post: operations['notes/conversation'];
   };
   '/notes/create': {
     /**
@@ -2520,7 +2520,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:notes*
      */
-    post: operations['notes___create'];
+    post: operations['notes/create'];
   };
   '/notes/delete': {
     /**
@@ -2529,7 +2529,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:notes*
      */
-    post: operations['notes___delete'];
+    post: operations['notes/delete'];
   };
   '/notes/favorites/create': {
     /**
@@ -2538,7 +2538,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:favorites*
      */
-    post: operations['notes___favorites___create'];
+    post: operations['notes/favorites/create'];
   };
   '/notes/favorites/delete': {
     /**
@@ -2547,7 +2547,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:favorites*
      */
-    post: operations['notes___favorites___delete'];
+    post: operations['notes/favorites/delete'];
   };
   '/notes/featured': {
     /**
@@ -2556,14 +2556,14 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    get: operations['notes___featured'];
+    get: operations['notes/featured'];
     /**
      * notes/featured
      * @description No description provided.
      *
      * **Credential required**: *No*
      */
-    post: operations['notes___featured'];
+    post: operations['notes/featured'];
   };
   '/notes/global-timeline': {
     /**
@@ -2572,7 +2572,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['notes___global-timeline'];
+    post: operations['notes/global-timeline'];
   };
   '/notes/hybrid-timeline': {
     /**
@@ -2581,7 +2581,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:account*
      */
-    post: operations['notes___hybrid-timeline'];
+    post: operations['notes/hybrid-timeline'];
   };
   '/notes/local-timeline': {
     /**
@@ -2590,7 +2590,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['notes___local-timeline'];
+    post: operations['notes/local-timeline'];
   };
   '/notes/mentions': {
     /**
@@ -2599,7 +2599,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:account*
      */
-    post: operations['notes___mentions'];
+    post: operations['notes/mentions'];
   };
   '/notes/polls/recommendation': {
     /**
@@ -2608,7 +2608,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:account*
      */
-    post: operations['notes___polls___recommendation'];
+    post: operations['notes/polls/recommendation'];
   };
   '/notes/polls/vote': {
     /**
@@ -2617,7 +2617,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:votes*
      */
-    post: operations['notes___polls___vote'];
+    post: operations['notes/polls/vote'];
   };
   '/notes/reactions': {
     /**
@@ -2626,14 +2626,14 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    get: operations['notes___reactions'];
+    get: operations['notes/reactions'];
     /**
      * notes/reactions
      * @description No description provided.
      *
      * **Credential required**: *No*
      */
-    post: operations['notes___reactions'];
+    post: operations['notes/reactions'];
   };
   '/notes/reactions/create': {
     /**
@@ -2642,7 +2642,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:reactions*
      */
-    post: operations['notes___reactions___create'];
+    post: operations['notes/reactions/create'];
   };
   '/notes/reactions/delete': {
     /**
@@ -2651,7 +2651,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:reactions*
      */
-    post: operations['notes___reactions___delete'];
+    post: operations['notes/reactions/delete'];
   };
   '/notes/renotes': {
     /**
@@ -2660,7 +2660,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['notes___renotes'];
+    post: operations['notes/renotes'];
   };
   '/notes/replies': {
     /**
@@ -2669,7 +2669,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['notes___replies'];
+    post: operations['notes/replies'];
   };
   '/notes/search-by-tag': {
     /**
@@ -2678,7 +2678,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['notes___search-by-tag'];
+    post: operations['notes/search-by-tag'];
   };
   '/notes/search': {
     /**
@@ -2687,7 +2687,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['notes___search'];
+    post: operations['notes/search'];
   };
   '/notes/show': {
     /**
@@ -2696,7 +2696,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['notes___show'];
+    post: operations['notes/show'];
   };
   '/notes/state': {
     /**
@@ -2705,7 +2705,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:account*
      */
-    post: operations['notes___state'];
+    post: operations['notes/state'];
   };
   '/notes/thread-muting/create': {
     /**
@@ -2714,7 +2714,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:account*
      */
-    post: operations['notes___thread-muting___create'];
+    post: operations['notes/thread-muting/create'];
   };
   '/notes/thread-muting/delete': {
     /**
@@ -2723,7 +2723,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:account*
      */
-    post: operations['notes___thread-muting___delete'];
+    post: operations['notes/thread-muting/delete'];
   };
   '/notes/timeline': {
     /**
@@ -2732,7 +2732,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:account*
      */
-    post: operations['notes___timeline'];
+    post: operations['notes/timeline'];
   };
   '/notes/translate': {
     /**
@@ -2741,7 +2741,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:account*
      */
-    post: operations['notes___translate'];
+    post: operations['notes/translate'];
   };
   '/notes/unrenote': {
     /**
@@ -2750,7 +2750,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:notes*
      */
-    post: operations['notes___unrenote'];
+    post: operations['notes/unrenote'];
   };
   '/notes/user-list-timeline': {
     /**
@@ -2759,7 +2759,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:account*
      */
-    post: operations['notes___user-list-timeline'];
+    post: operations['notes/user-list-timeline'];
   };
   '/notifications/create': {
     /**
@@ -2768,7 +2768,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:notifications*
      */
-    post: operations['notifications___create'];
+    post: operations['notifications/create'];
   };
   '/notifications/flush': {
     /**
@@ -2777,7 +2777,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:notifications*
      */
-    post: operations['notifications___flush'];
+    post: operations['notifications/flush'];
   };
   '/notifications/mark-all-as-read': {
     /**
@@ -2786,7 +2786,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:notifications*
      */
-    post: operations['notifications___mark-all-as-read'];
+    post: operations['notifications/mark-all-as-read'];
   };
   '/notifications/test-notification': {
     /**
@@ -2795,7 +2795,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:notifications*
      */
-    post: operations['notifications___test-notification'];
+    post: operations['notifications/test-notification'];
   };
   '/page-push': {
     /**
@@ -2814,7 +2814,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:pages*
      */
-    post: operations['pages___create'];
+    post: operations['pages/create'];
   };
   '/pages/delete': {
     /**
@@ -2823,7 +2823,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:pages*
      */
-    post: operations['pages___delete'];
+    post: operations['pages/delete'];
   };
   '/pages/featured': {
     /**
@@ -2832,7 +2832,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['pages___featured'];
+    post: operations['pages/featured'];
   };
   '/pages/like': {
     /**
@@ -2841,7 +2841,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:page-likes*
      */
-    post: operations['pages___like'];
+    post: operations['pages/like'];
   };
   '/pages/show': {
     /**
@@ -2850,7 +2850,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['pages___show'];
+    post: operations['pages/show'];
   };
   '/pages/unlike': {
     /**
@@ -2859,7 +2859,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:page-likes*
      */
-    post: operations['pages___unlike'];
+    post: operations['pages/unlike'];
   };
   '/pages/update': {
     /**
@@ -2868,7 +2868,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:pages*
      */
-    post: operations['pages___update'];
+    post: operations['pages/update'];
   };
   '/flash/create': {
     /**
@@ -2877,7 +2877,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:flash*
      */
-    post: operations['flash___create'];
+    post: operations['flash/create'];
   };
   '/flash/delete': {
     /**
@@ -2886,7 +2886,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:flash*
      */
-    post: operations['flash___delete'];
+    post: operations['flash/delete'];
   };
   '/flash/featured': {
     /**
@@ -2895,7 +2895,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['flash___featured'];
+    post: operations['flash/featured'];
   };
   '/flash/like': {
     /**
@@ -2904,7 +2904,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:flash-likes*
      */
-    post: operations['flash___like'];
+    post: operations['flash/like'];
   };
   '/flash/show': {
     /**
@@ -2913,7 +2913,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['flash___show'];
+    post: operations['flash/show'];
   };
   '/flash/unlike': {
     /**
@@ -2922,7 +2922,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:flash-likes*
      */
-    post: operations['flash___unlike'];
+    post: operations['flash/unlike'];
   };
   '/flash/update': {
     /**
@@ -2931,7 +2931,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:flash*
      */
-    post: operations['flash___update'];
+    post: operations['flash/update'];
   };
   '/flash/my': {
     /**
@@ -2940,7 +2940,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:flash*
      */
-    post: operations['flash___my'];
+    post: operations['flash/my'];
   };
   '/flash/my-likes': {
     /**
@@ -2949,7 +2949,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:flash-likes*
      */
-    post: operations['flash___my-likes'];
+    post: operations['flash/my-likes'];
   };
   '/ping': {
     /**
@@ -2976,7 +2976,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:account*
      */
-    post: operations['promo___read'];
+    post: operations['promo/read'];
   };
   '/roles/list': {
     /**
@@ -2985,7 +2985,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:account*
      */
-    post: operations['roles___list'];
+    post: operations['roles/list'];
   };
   '/roles/show': {
     /**
@@ -2994,7 +2994,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['roles___show'];
+    post: operations['roles/show'];
   };
   '/roles/users': {
     /**
@@ -3003,7 +3003,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['roles___users'];
+    post: operations['roles/users'];
   };
   '/roles/notes': {
     /**
@@ -3012,7 +3012,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:account*
      */
-    post: operations['roles___notes'];
+    post: operations['roles/notes'];
   };
   '/request-reset-password': {
     /**
@@ -3074,7 +3074,7 @@ export type paths = {
      * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
-    post: operations['sw___show-registration'];
+    post: operations['sw/show-registration'];
   };
   '/sw/update-registration': {
     /**
@@ -3084,7 +3084,7 @@ export type paths = {
      * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
-    post: operations['sw___update-registration'];
+    post: operations['sw/update-registration'];
   };
   '/sw/register': {
     /**
@@ -3094,7 +3094,7 @@ export type paths = {
      * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
      * **Credential required**: *Yes*
      */
-    post: operations['sw___register'];
+    post: operations['sw/register'];
   };
   '/sw/unregister': {
     /**
@@ -3103,7 +3103,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['sw___unregister'];
+    post: operations['sw/unregister'];
   };
   '/test': {
     /**
@@ -3121,7 +3121,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['username___available'];
+    post: operations['username/available'];
   };
   '/users': {
     /**
@@ -3139,7 +3139,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['users___clips'];
+    post: operations['users/clips'];
   };
   '/users/followers': {
     /**
@@ -3148,7 +3148,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['users___followers'];
+    post: operations['users/followers'];
   };
   '/users/following': {
     /**
@@ -3157,7 +3157,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['users___following'];
+    post: operations['users/following'];
   };
   '/users/gallery/posts': {
     /**
@@ -3166,7 +3166,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['users___gallery___posts'];
+    post: operations['users/gallery/posts'];
   };
   '/users/get-frequently-replied-users': {
     /**
@@ -3175,7 +3175,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['users___get-frequently-replied-users'];
+    post: operations['users/get-frequently-replied-users'];
   };
   '/users/featured-notes': {
     /**
@@ -3184,14 +3184,14 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    get: operations['users___featured-notes'];
+    get: operations['users/featured-notes'];
     /**
      * users/featured-notes
      * @description No description provided.
      *
      * **Credential required**: *No*
      */
-    post: operations['users___featured-notes'];
+    post: operations['users/featured-notes'];
   };
   '/users/lists/create': {
     /**
@@ -3200,7 +3200,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:account*
      */
-    post: operations['users___lists___create'];
+    post: operations['users/lists/create'];
   };
   '/users/lists/delete': {
     /**
@@ -3209,7 +3209,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:account*
      */
-    post: operations['users___lists___delete'];
+    post: operations['users/lists/delete'];
   };
   '/users/lists/list': {
     /**
@@ -3218,7 +3218,7 @@ export type paths = {
      *
      * **Credential required**: *No* / **Permission**: *read:account*
      */
-    post: operations['users___lists___list'];
+    post: operations['users/lists/list'];
   };
   '/users/lists/pull': {
     /**
@@ -3227,7 +3227,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:account*
      */
-    post: operations['users___lists___pull'];
+    post: operations['users/lists/pull'];
   };
   '/users/lists/push': {
     /**
@@ -3236,7 +3236,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:account*
      */
-    post: operations['users___lists___push'];
+    post: operations['users/lists/push'];
   };
   '/users/lists/show': {
     /**
@@ -3245,7 +3245,7 @@ export type paths = {
      *
      * **Credential required**: *No* / **Permission**: *read:account*
      */
-    post: operations['users___lists___show'];
+    post: operations['users/lists/show'];
   };
   '/users/lists/favorite': {
     /**
@@ -3254,7 +3254,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:account*
      */
-    post: operations['users___lists___favorite'];
+    post: operations['users/lists/favorite'];
   };
   '/users/lists/unfavorite': {
     /**
@@ -3263,7 +3263,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:account*
      */
-    post: operations['users___lists___unfavorite'];
+    post: operations['users/lists/unfavorite'];
   };
   '/users/lists/update': {
     /**
@@ -3272,7 +3272,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:account*
      */
-    post: operations['users___lists___update'];
+    post: operations['users/lists/update'];
   };
   '/users/lists/create-from-public': {
     /**
@@ -3281,7 +3281,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:account*
      */
-    post: operations['users___lists___create-from-public'];
+    post: operations['users/lists/create-from-public'];
   };
   '/users/lists/update-membership': {
     /**
@@ -3290,7 +3290,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:account*
      */
-    post: operations['users___lists___update-membership'];
+    post: operations['users/lists/update-membership'];
   };
   '/users/lists/get-memberships': {
     /**
@@ -3299,7 +3299,7 @@ export type paths = {
      *
      * **Credential required**: *No* / **Permission**: *read:account*
      */
-    post: operations['users___lists___get-memberships'];
+    post: operations['users/lists/get-memberships'];
   };
   '/users/notes': {
     /**
@@ -3308,7 +3308,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['users___notes'];
+    post: operations['users/notes'];
   };
   '/users/pages': {
     /**
@@ -3317,7 +3317,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['users___pages'];
+    post: operations['users/pages'];
   };
   '/users/flashs': {
     /**
@@ -3326,7 +3326,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['users___flashs'];
+    post: operations['users/flashs'];
   };
   '/users/reactions': {
     /**
@@ -3335,7 +3335,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['users___reactions'];
+    post: operations['users/reactions'];
   };
   '/users/recommendation': {
     /**
@@ -3344,7 +3344,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:account*
      */
-    post: operations['users___recommendation'];
+    post: operations['users/recommendation'];
   };
   '/users/relation': {
     /**
@@ -3353,7 +3353,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:account*
      */
-    post: operations['users___relation'];
+    post: operations['users/relation'];
   };
   '/users/report-abuse': {
     /**
@@ -3362,7 +3362,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:report-abuse*
      */
-    post: operations['users___report-abuse'];
+    post: operations['users/report-abuse'];
   };
   '/users/search-by-username-and-host': {
     /**
@@ -3371,7 +3371,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['users___search-by-username-and-host'];
+    post: operations['users/search-by-username-and-host'];
   };
   '/users/search': {
     /**
@@ -3380,7 +3380,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['users___search'];
+    post: operations['users/search'];
   };
   '/users/show': {
     /**
@@ -3389,7 +3389,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['users___show'];
+    post: operations['users/show'];
   };
   '/users/achievements': {
     /**
@@ -3398,7 +3398,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['users___achievements'];
+    post: operations['users/achievements'];
   };
   '/users/update-memo': {
     /**
@@ -3407,7 +3407,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:account*
      */
-    post: operations['users___update-memo'];
+    post: operations['users/update-memo'];
   };
   '/fetch-rss': {
     /**
@@ -3458,7 +3458,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:account*
      */
-    post: operations['bubble-game___register'];
+    post: operations['bubble-game/register'];
   };
   '/bubble-game/ranking': {
     /**
@@ -3467,14 +3467,14 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    get: operations['bubble-game___ranking'];
+    get: operations['bubble-game/ranking'];
     /**
      * bubble-game/ranking
      * @description No description provided.
      *
      * **Credential required**: *No*
      */
-    post: operations['bubble-game___ranking'];
+    post: operations['bubble-game/ranking'];
   };
   '/reversi/cancel-match': {
     /**
@@ -3483,7 +3483,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:account*
      */
-    post: operations['reversi___cancel-match'];
+    post: operations['reversi/cancel-match'];
   };
   '/reversi/games': {
     /**
@@ -3492,7 +3492,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['reversi___games'];
+    post: operations['reversi/games'];
   };
   '/reversi/match': {
     /**
@@ -3501,7 +3501,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:account*
      */
-    post: operations['reversi___match'];
+    post: operations['reversi/match'];
   };
   '/reversi/invitations': {
     /**
@@ -3510,7 +3510,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *read:account*
      */
-    post: operations['reversi___invitations'];
+    post: operations['reversi/invitations'];
   };
   '/reversi/show-game': {
     /**
@@ -3519,7 +3519,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['reversi___show-game'];
+    post: operations['reversi/show-game'];
   };
   '/reversi/surrender': {
     /**
@@ -3528,7 +3528,7 @@ export type paths = {
      *
      * **Credential required**: *Yes* / **Permission**: *write:account*
      */
-    post: operations['reversi___surrender'];
+    post: operations['reversi/surrender'];
   };
   '/reversi/verify': {
     /**
@@ -3537,7 +3537,7 @@ export type paths = {
      *
      * **Credential required**: *No*
      */
-    post: operations['reversi___verify'];
+    post: operations['reversi/verify'];
   };
 };
 
@@ -3987,7 +3987,6 @@ export type components = {
       reactions: {
         [key: string]: number;
       };
-      reactionCount: number;
       renoteCount: number;
       repliesCount: number;
       uri?: string;
@@ -4434,8 +4433,6 @@ export type components = {
       localOnly: boolean;
       notify: boolean;
       /** @default false */
-      excludeBots: boolean;
-      /** @default false */
       withReplies: boolean;
       withFile: boolean;
       isActive: boolean;
@@ -4460,7 +4457,6 @@ export type components = {
       isPublic: boolean;
       favoritedCount: number;
       isFavorited?: boolean;
-      notesCount?: number;
     };
     FederationInstance: {
       /** Format: id */
@@ -4586,11 +4582,6 @@ export type components = {
       /** @enum {string} */
       type: 'isLocal' | 'isRemote';
     };
-    RoleCondFormulaValueUserSettingBooleanSchema: {
-      id: string;
-      /** @enum {string} */
-      type: 'isSuspended' | 'isLocked' | 'isBot' | 'isCat' | 'isExplorable';
-    };
     RoleCondFormulaValueAssignedRole: {
       id: string;
       /** @enum {string} */
@@ -4613,7 +4604,7 @@ export type components = {
       type: 'followersLessThanOrEq' | 'followersMoreThanOrEq' | 'followingLessThanOrEq' | 'followingMoreThanOrEq' | 'notesLessThanOrEq' | 'notesMoreThanOrEq';
       value: number;
     };
-    RoleCondFormulaValue: components['schemas']['RoleCondFormulaLogics'] | components['schemas']['RoleCondFormulaValueNot'] | components['schemas']['RoleCondFormulaValueIsLocalOrRemote'] | components['schemas']['RoleCondFormulaValueUserSettingBooleanSchema'] | components['schemas']['RoleCondFormulaValueAssignedRole'] | components['schemas']['RoleCondFormulaValueCreated'] | components['schemas']['RoleCondFormulaFollowersOrFollowingOrNotes'];
+    RoleCondFormulaValue: components['schemas']['RoleCondFormulaLogics'] | components['schemas']['RoleCondFormulaValueNot'] | components['schemas']['RoleCondFormulaValueIsLocalOrRemote'] | components['schemas']['RoleCondFormulaValueAssignedRole'] | components['schemas']['RoleCondFormulaValueCreated'] | components['schemas']['RoleCondFormulaFollowersOrFollowingOrNotes'];
     RoleLite: {
       /**
        * Format: id
@@ -4816,7 +4807,6 @@ export type components = {
       enableServiceWorker: boolean;
       translatorAvailable: boolean;
       mediaProxy: string;
-      enableUrlPreview: boolean;
       backgroundImageUrl: string | null;
       impressumUrl: string | null;
       logoImageUrl: string | null;
@@ -4866,7 +4856,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:admin:meta*
    */
-  admin___meta: {
+  'admin/meta': {
     responses: {
       /** @description OK (with results) */
       200: {
@@ -4969,21 +4959,11 @@ export type operations = {
             objectStorageS3ForcePathStyle: boolean;
             privacyPolicyUrl: string | null;
             repositoryUrl: string | null;
-            /**
-             * @deprecated
-             * @description [Deprecated] Use "urlPreviewSummaryProxyUrl" instead.
-             */
             summalyProxy: string | null;
             themeColor: string | null;
             tosUrl: string | null;
             uri: string;
             version: string;
-            urlPreviewEnabled: boolean;
-            urlPreviewTimeout: number;
-            urlPreviewMaximumContentLength: number;
-            urlPreviewRequireContentLength: boolean;
-            urlPreviewUserAgent: string | null;
-            urlPreviewSummaryProxyUrl: string | null;
           };
         };
       };
@@ -5025,7 +5005,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:admin:abuse-user-reports*
    */
-  'admin___abuse-user-reports': {
+  'admin/abuse-user-reports': {
     requestBody: {
       content: {
         'application/json': {
@@ -5117,7 +5097,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  admin___accounts___create: {
+  'admin/accounts/create': {
     requestBody: {
       content: {
         'application/json': {
@@ -5171,7 +5151,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:account*
    */
-  admin___accounts___delete: {
+  'admin/accounts/delete': {
     requestBody: {
       content: {
         'application/json': {
@@ -5223,7 +5203,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:admin:account*
    */
-  'admin___accounts___find-by-email': {
+  'admin/accounts/find-by-email': {
     requestBody: {
       content: {
         'application/json': {
@@ -5276,7 +5256,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:ad*
    */
-  admin___ad___create: {
+  'admin/ad/create': {
     requestBody: {
       content: {
         'application/json': {
@@ -5337,7 +5317,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:ad*
    */
-  admin___ad___delete: {
+  'admin/ad/delete': {
     requestBody: {
       content: {
         'application/json': {
@@ -5389,7 +5369,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:admin:ad*
    */
-  admin___ad___list: {
+  'admin/ad/list': {
     requestBody: {
       content: {
         'application/json': {
@@ -5449,7 +5429,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:ad*
    */
-  admin___ad___update: {
+  'admin/ad/update': {
     requestBody: {
       content: {
         'application/json': {
@@ -5510,7 +5490,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:announcements*
    */
-  admin___announcements___create: {
+  'admin/announcements/create': {
     requestBody: {
       content: {
         'application/json': {
@@ -5599,7 +5579,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:announcements*
    */
-  admin___announcements___delete: {
+  'admin/announcements/delete': {
     requestBody: {
       content: {
         'application/json': {
@@ -5651,7 +5631,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:admin:announcements*
    */
-  admin___announcements___list: {
+  'admin/announcements/list': {
     requestBody: {
       content: {
         'application/json': {
@@ -5725,7 +5705,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:announcements*
    */
-  admin___announcements___update: {
+  'admin/announcements/update': {
     requestBody: {
       content: {
         'application/json': {
@@ -5788,7 +5768,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:avatar-decorations*
    */
-  'admin___avatar-decorations___create': {
+  'admin/avatar-decorations/create': {
     requestBody: {
       content: {
         'application/json': {
@@ -5842,7 +5822,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:avatar-decorations*
    */
-  'admin___avatar-decorations___delete': {
+  'admin/avatar-decorations/delete': {
     requestBody: {
       content: {
         'application/json': {
@@ -5894,7 +5874,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:admin:avatar-decorations*
    */
-  'admin___avatar-decorations___list': {
+  'admin/avatar-decorations/list': {
     requestBody: {
       content: {
         'application/json': {
@@ -5968,7 +5948,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:avatar-decorations*
    */
-  'admin___avatar-decorations___update': {
+  'admin/avatar-decorations/update': {
     requestBody: {
       content: {
         'application/json': {
@@ -6024,7 +6004,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:delete-all-files-of-a-user*
    */
-  'admin___delete-all-files-of-a-user': {
+  'admin/delete-all-files-of-a-user': {
     requestBody: {
       content: {
         'application/json': {
@@ -6076,7 +6056,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:unset-user-avatar*
    */
-  'admin___unset-user-avatar': {
+  'admin/unset-user-avatar': {
     requestBody: {
       content: {
         'application/json': {
@@ -6128,7 +6108,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:unset-user-banner*
    */
-  'admin___unset-user-banner': {
+  'admin/unset-user-banner': {
     requestBody: {
       content: {
         'application/json': {
@@ -6180,7 +6160,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:drive*
    */
-  'admin___drive___clean-remote-files': {
+  'admin/drive/clean-remote-files': {
     responses: {
       /** @description OK (without any results) */
       204: {
@@ -6224,7 +6204,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:drive*
    */
-  admin___drive___cleanup: {
+  'admin/drive/cleanup': {
     responses: {
       /** @description OK (without any results) */
       204: {
@@ -6268,7 +6248,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:admin:drive*
    */
-  admin___drive___files: {
+  'admin/drive/files': {
     requestBody: {
       content: {
         'application/json': {
@@ -6339,7 +6319,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:admin:drive*
    */
-  'admin___drive___show-file': {
+  'admin/drive/show-file': {
     requestBody: {
       content: {
         'application/json': {
@@ -6448,7 +6428,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:emoji*
    */
-  'admin___emoji___add-aliases-bulk': {
+  'admin/emoji/add-aliases-bulk': {
     requestBody: {
       content: {
         'application/json': {
@@ -6500,7 +6480,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:emoji*
    */
-  admin___emoji___add: {
+  'admin/emoji/add': {
     requestBody: {
       content: {
         'application/json': {
@@ -6562,7 +6542,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:emoji*
    */
-  admin___emoji___copy: {
+  'admin/emoji/copy': {
     requestBody: {
       content: {
         'application/json': {
@@ -6619,7 +6599,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:emoji*
    */
-  'admin___emoji___delete-bulk': {
+  'admin/emoji/delete-bulk': {
     requestBody: {
       content: {
         'application/json': {
@@ -6670,7 +6650,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:emoji*
    */
-  admin___emoji___delete: {
+  'admin/emoji/delete': {
     requestBody: {
       content: {
         'application/json': {
@@ -6723,7 +6703,7 @@ export type operations = {
    * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
-  'admin___emoji___import-zip': {
+  'admin/emoji/import-zip': {
     requestBody: {
       content: {
         'application/json': {
@@ -6775,7 +6755,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:admin:emoji*
    */
-  'admin___emoji___list-remote': {
+  'admin/emoji/list-remote': {
     requestBody: {
       content: {
         'application/json': {
@@ -6849,7 +6829,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:admin:emoji*
    */
-  admin___emoji___list: {
+  'admin/emoji/list': {
     requestBody: {
       content: {
         'application/json': {
@@ -6918,7 +6898,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:emoji*
    */
-  'admin___emoji___remove-aliases-bulk': {
+  'admin/emoji/remove-aliases-bulk': {
     requestBody: {
       content: {
         'application/json': {
@@ -6970,7 +6950,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:emoji*
    */
-  'admin___emoji___set-aliases-bulk': {
+  'admin/emoji/set-aliases-bulk': {
     requestBody: {
       content: {
         'application/json': {
@@ -7022,7 +7002,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:emoji*
    */
-  'admin___emoji___set-category-bulk': {
+  'admin/emoji/set-category-bulk': {
     requestBody: {
       content: {
         'application/json': {
@@ -7075,7 +7055,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:emoji*
    */
-  'admin___emoji___set-license-bulk': {
+  'admin/emoji/set-license-bulk': {
     requestBody: {
       content: {
         'application/json': {
@@ -7128,7 +7108,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:emoji*
    */
-  admin___emoji___update: {
+  'admin/emoji/update': {
     requestBody: {
       content: {
         'application/json': {
@@ -7190,7 +7170,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:federation*
    */
-  'admin___federation___delete-all-files': {
+  'admin/federation/delete-all-files': {
     requestBody: {
       content: {
         'application/json': {
@@ -7241,7 +7221,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:federation*
    */
-  'admin___federation___refresh-remote-instance-metadata': {
+  'admin/federation/refresh-remote-instance-metadata': {
     requestBody: {
       content: {
         'application/json': {
@@ -7292,7 +7272,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:federation*
    */
-  'admin___federation___remove-all-following': {
+  'admin/federation/remove-all-following': {
     requestBody: {
       content: {
         'application/json': {
@@ -7343,7 +7323,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:federation*
    */
-  'admin___federation___update-instance': {
+  'admin/federation/update-instance': {
     requestBody: {
       content: {
         'application/json': {
@@ -7396,7 +7376,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:admin:index-stats*
    */
-  'admin___get-index-stats': {
+  'admin/get-index-stats': {
     responses: {
       /** @description OK (with results) */
       200: {
@@ -7445,7 +7425,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:admin:table-stats*
    */
-  'admin___get-table-stats': {
+  'admin/get-table-stats': {
     responses: {
       /** @description OK (with results) */
       200: {
@@ -7496,7 +7476,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:admin:user-ips*
    */
-  'admin___get-user-ips': {
+  'admin/get-user-ips': {
     requestBody: {
       content: {
         'application/json': {
@@ -7554,7 +7534,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:invite-codes*
    */
-  admin___invite___create: {
+  'admin/invite/create': {
     requestBody: {
       content: {
         'application/json': {
@@ -7609,7 +7589,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:admin:invite-codes*
    */
-  admin___invite___list: {
+  'admin/invite/list': {
     requestBody: {
       content: {
         'application/json': {
@@ -7672,7 +7652,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:promo*
    */
-  admin___promo___create: {
+  'admin/promo/create': {
     requestBody: {
       content: {
         'application/json': {
@@ -7725,7 +7705,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:queue*
    */
-  admin___queue___clear: {
+  'admin/queue/clear': {
     responses: {
       /** @description OK (without any results) */
       204: {
@@ -7769,7 +7749,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:admin:queue*
    */
-  'admin___queue___deliver-delayed': {
+  'admin/queue/deliver-delayed': {
     responses: {
       /** @description OK (with results) */
       200: {
@@ -7815,7 +7795,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:admin:queue*
    */
-  'admin___queue___inbox-delayed': {
+  'admin/queue/inbox-delayed': {
     responses: {
       /** @description OK (with results) */
       200: {
@@ -7861,7 +7841,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:queue*
    */
-  admin___queue___promote: {
+  'admin/queue/promote': {
     requestBody: {
       content: {
         'application/json': {
@@ -7913,7 +7893,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:admin:emoji*
    */
-  admin___queue___stats: {
+  'admin/queue/stats': {
     responses: {
       /** @description OK (with results) */
       200: {
@@ -7964,7 +7944,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:relays*
    */
-  admin___relays___add: {
+  'admin/relays/add': {
     requestBody: {
       content: {
         'application/json': {
@@ -8027,7 +8007,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:admin:relays*
    */
-  admin___relays___list: {
+  'admin/relays/list': {
     responses: {
       /** @description OK (with results) */
       200: {
@@ -8083,7 +8063,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:relays*
    */
-  admin___relays___remove: {
+  'admin/relays/remove': {
     requestBody: {
       content: {
         'application/json': {
@@ -8134,7 +8114,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:reset-password*
    */
-  'admin___reset-password': {
+  'admin/reset-password': {
     requestBody: {
       content: {
         'application/json': {
@@ -8190,7 +8170,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:resolve-abuse-user-report*
    */
-  'admin___resolve-abuse-user-report': {
+  'admin/resolve-abuse-user-report': {
     requestBody: {
       content: {
         'application/json': {
@@ -8244,7 +8224,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:send-email*
    */
-  'admin___send-email': {
+  'admin/send-email': {
     requestBody: {
       content: {
         'application/json': {
@@ -8297,7 +8277,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:admin:server-info*
    */
-  'admin___server-info': {
+  'admin/server-info': {
     responses: {
       /** @description OK (with results) */
       200: {
@@ -8367,7 +8347,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:admin:show-moderation-log*
    */
-  'admin___show-moderation-logs': {
+  'admin/show-moderation-logs': {
     requestBody: {
       content: {
         'application/json': {
@@ -8438,7 +8418,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:admin:show-user*
    */
-  'admin___show-user': {
+  'admin/show-user': {
     requestBody: {
       content: {
         'application/json': {
@@ -8647,7 +8627,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:admin:show-users*
    */
-  'admin___show-users': {
+  'admin/show-users': {
     requestBody: {
       content: {
         'application/json': {
@@ -8722,7 +8702,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:suspend-user*
    */
-  'admin___suspend-user': {
+  'admin/suspend-user': {
     requestBody: {
       content: {
         'application/json': {
@@ -8774,7 +8754,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:unsuspend-user*
    */
-  'admin___unsuspend-user': {
+  'admin/unsuspend-user': {
     requestBody: {
       content: {
         'application/json': {
@@ -8826,7 +8806,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:meta*
    */
-  'admin___update-meta': {
+  'admin/update-meta': {
     requestBody: {
       content: {
         'application/json': {
@@ -8879,6 +8859,7 @@ export type operations = {
           maintainerName?: string | null;
           maintainerEmail?: string | null;
           langs?: string[];
+          summalyProxy?: string | null;
           deeplAuthKey?: string | null;
           deeplIsPro?: boolean;
           enableEmail?: boolean;
@@ -8932,14 +8913,6 @@ export type operations = {
           perUserListTimelineCacheMax?: number;
           notesPerOneAd?: number;
           silencedHosts?: string[] | null;
-          /** @description [Deprecated] Use "urlPreviewSummaryProxyUrl" instead. */
-          summalyProxy?: string | null;
-          urlPreviewEnabled?: boolean;
-          urlPreviewTimeout?: number;
-          urlPreviewMaximumContentLength?: number;
-          urlPreviewRequireContentLength?: boolean;
-          urlPreviewUserAgent?: string | null;
-          urlPreviewSummaryProxyUrl?: string | null;
         };
       };
     };
@@ -8986,7 +8959,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:delete-account*
    */
-  'admin___delete-account': {
+  'admin/delete-account': {
     requestBody: {
       content: {
         'application/json': {
@@ -9038,7 +9011,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:user-note*
    */
-  'admin___update-user-note': {
+  'admin/update-user-note': {
     requestBody: {
       content: {
         'application/json': {
@@ -9091,7 +9064,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:roles*
    */
-  admin___roles___create: {
+  'admin/roles/create': {
     requestBody: {
       content: {
         'application/json': {
@@ -9159,7 +9132,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:roles*
    */
-  admin___roles___delete: {
+  'admin/roles/delete': {
     requestBody: {
       content: {
         'application/json': {
@@ -9211,7 +9184,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:admin:roles*
    */
-  admin___roles___list: {
+  'admin/roles/list': {
     responses: {
       /** @description OK (with results) */
       200: {
@@ -9257,7 +9230,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:admin:roles*
    */
-  admin___roles___show: {
+  'admin/roles/show': {
     requestBody: {
       content: {
         'application/json': {
@@ -9311,7 +9284,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:roles*
    */
-  admin___roles___update: {
+  'admin/roles/update': {
     requestBody: {
       content: {
         'application/json': {
@@ -9378,7 +9351,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:roles*
    */
-  admin___roles___assign: {
+  'admin/roles/assign': {
     requestBody: {
       content: {
         'application/json': {
@@ -9433,7 +9406,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:roles*
    */
-  admin___roles___unassign: {
+  'admin/roles/unassign': {
     requestBody: {
       content: {
         'application/json': {
@@ -9487,7 +9460,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:admin:roles*
    */
-  'admin___roles___update-default-policies': {
+  'admin/roles/update-default-policies': {
     requestBody: {
       content: {
         'application/json': {
@@ -9538,7 +9511,7 @@ export type operations = {
    *
    * **Credential required**: *No* / **Permission**: *read:admin:roles*
    */
-  admin___roles___users: {
+  'admin/roles/users': {
     requestBody: {
       content: {
         'application/json': {
@@ -9666,7 +9639,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:account*
    */
-  antennas___create: {
+  'antennas/create': {
     requestBody: {
       content: {
         'application/json': {
@@ -9680,7 +9653,6 @@ export type operations = {
           users: string[];
           caseSensitive: boolean;
           localOnly?: boolean;
-          excludeBots?: boolean;
           withReplies: boolean;
           withFile: boolean;
           notify: boolean;
@@ -9732,7 +9704,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:account*
    */
-  antennas___delete: {
+  'antennas/delete': {
     requestBody: {
       content: {
         'application/json': {
@@ -9784,7 +9756,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:account*
    */
-  antennas___list: {
+  'antennas/list': {
     responses: {
       /** @description OK (with results) */
       200: {
@@ -9830,7 +9802,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:account*
    */
-  antennas___notes: {
+  'antennas/notes': {
     requestBody: {
       content: {
         'application/json': {
@@ -9892,7 +9864,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:account*
    */
-  antennas___show: {
+  'antennas/show': {
     requestBody: {
       content: {
         'application/json': {
@@ -9946,26 +9918,25 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:account*
    */
-  antennas___update: {
+  'antennas/update': {
     requestBody: {
       content: {
         'application/json': {
           /** Format: misskey:id */
           antennaId: string;
-          name?: string;
+          name: string;
           /** @enum {string} */
-          src?: 'home' | 'all' | 'users' | 'list' | 'users_blacklist';
+          src: 'home' | 'all' | 'users' | 'list' | 'users_blacklist';
           /** Format: misskey:id */
           userListId?: string | null;
-          keywords?: string[][];
-          excludeKeywords?: string[][];
-          users?: string[];
-          caseSensitive?: boolean;
+          keywords: string[][];
+          excludeKeywords: string[][];
+          users: string[];
+          caseSensitive: boolean;
           localOnly?: boolean;
-          excludeBots?: boolean;
-          withReplies?: boolean;
-          withFile?: boolean;
-          notify?: boolean;
+          withReplies: boolean;
+          withFile: boolean;
+          notify: boolean;
         };
       };
     };
@@ -10014,7 +9985,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:federation*
    */
-  ap___get: {
+  'ap/get': {
     requestBody: {
       content: {
         'application/json': {
@@ -10073,7 +10044,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:account*
    */
-  ap___show: {
+  'ap/show': {
     requestBody: {
       content: {
         'application/json': {
@@ -10140,7 +10111,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  app___create: {
+  'app/create': {
     requestBody: {
       content: {
         'application/json': {
@@ -10196,7 +10167,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  app___show: {
+  'app/show': {
     requestBody: {
       content: {
         'application/json': {
@@ -10251,7 +10222,7 @@ export type operations = {
    * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
-  auth___accept: {
+  'auth/accept': {
     requestBody: {
       content: {
         'application/json': {
@@ -10302,7 +10273,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  auth___session___generate: {
+  'auth/session/generate': {
     requestBody: {
       content: {
         'application/json': {
@@ -10359,7 +10330,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  auth___session___show: {
+  'auth/session/show': {
     requestBody: {
       content: {
         'application/json': {
@@ -10417,7 +10388,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  auth___session___userkey: {
+  'auth/session/userkey': {
     requestBody: {
       content: {
         'application/json': {
@@ -10474,7 +10445,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:blocks*
    */
-  blocking___create: {
+  'blocking/create': {
     requestBody: {
       content: {
         'application/json': {
@@ -10534,7 +10505,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:blocks*
    */
-  blocking___delete: {
+  'blocking/delete': {
     requestBody: {
       content: {
         'application/json': {
@@ -10594,7 +10565,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:blocks*
    */
-  blocking___list: {
+  'blocking/list': {
     requestBody: {
       content: {
         'application/json': {
@@ -10652,7 +10623,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:channels*
    */
-  channels___create: {
+  'channels/create': {
     requestBody: {
       content: {
         'application/json': {
@@ -10717,7 +10688,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  channels___featured: {
+  'channels/featured': {
     responses: {
       /** @description OK (with results) */
       200: {
@@ -10763,7 +10734,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:channels*
    */
-  channels___follow: {
+  'channels/follow': {
     requestBody: {
       content: {
         'application/json': {
@@ -10815,7 +10786,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:channels*
    */
-  channels___followed: {
+  'channels/followed': {
     requestBody: {
       content: {
         'application/json': {
@@ -10873,7 +10844,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:channels*
    */
-  channels___owned: {
+  'channels/owned': {
     requestBody: {
       content: {
         'application/json': {
@@ -10931,7 +10902,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  channels___show: {
+  'channels/show': {
     requestBody: {
       content: {
         'application/json': {
@@ -10985,7 +10956,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  channels___timeline: {
+  'channels/timeline': {
     requestBody: {
       content: {
         'application/json': {
@@ -11049,7 +11020,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:channels*
    */
-  channels___unfollow: {
+  'channels/unfollow': {
     requestBody: {
       content: {
         'application/json': {
@@ -11101,7 +11072,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:channels*
    */
-  channels___update: {
+  'channels/update': {
     requestBody: {
       content: {
         'application/json': {
@@ -11164,7 +11135,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:channels*
    */
-  channels___favorite: {
+  'channels/favorite': {
     requestBody: {
       content: {
         'application/json': {
@@ -11216,7 +11187,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:channels*
    */
-  channels___unfavorite: {
+  'channels/unfavorite': {
     requestBody: {
       content: {
         'application/json': {
@@ -11268,7 +11239,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:channels*
    */
-  'channels___my-favorites': {
+  'channels/my-favorites': {
     responses: {
       /** @description OK (with results) */
       200: {
@@ -11314,7 +11285,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  channels___search: {
+  'channels/search': {
     requestBody: {
       content: {
         'application/json': {
@@ -11378,7 +11349,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  'charts___active-users': {
+  'charts/active-users': {
     requestBody: {
       content: {
         'application/json': {
@@ -11446,7 +11417,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  'charts___ap-request': {
+  'charts/ap-request': {
     requestBody: {
       content: {
         'application/json': {
@@ -11508,7 +11479,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  charts___drive: {
+  'charts/drive': {
     requestBody: {
       content: {
         'application/json': {
@@ -11579,7 +11550,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  charts___federation: {
+  'charts/federation': {
     requestBody: {
       content: {
         'application/json': {
@@ -11646,7 +11617,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  charts___instance: {
+  'charts/instance': {
     requestBody: {
       content: {
         'application/json': {
@@ -11744,7 +11715,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  charts___notes: {
+  'charts/notes': {
     requestBody: {
       content: {
         'application/json': {
@@ -11825,7 +11796,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  charts___user___drive: {
+  'charts/user/drive': {
     requestBody: {
       content: {
         'application/json': {
@@ -11892,7 +11863,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  charts___user___following: {
+  'charts/user/following': {
     requestBody: {
       content: {
         'application/json': {
@@ -11977,7 +11948,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  charts___user___notes: {
+  'charts/user/notes': {
     requestBody: {
       content: {
         'application/json': {
@@ -12047,7 +12018,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  charts___user___pv: {
+  'charts/user/pv': {
     requestBody: {
       content: {
         'application/json': {
@@ -12116,7 +12087,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  charts___user___reactions: {
+  'charts/user/reactions': {
     requestBody: {
       content: {
         'application/json': {
@@ -12183,7 +12154,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  charts___users: {
+  'charts/users': {
     requestBody: {
       content: {
         'application/json': {
@@ -12252,7 +12223,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:account*
    */
-  'clips___add-note': {
+  'clips/add-note': {
     requestBody: {
       content: {
         'application/json': {
@@ -12312,7 +12283,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:account*
    */
-  'clips___remove-note': {
+  'clips/remove-note': {
     requestBody: {
       content: {
         'application/json': {
@@ -12366,7 +12337,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:account*
    */
-  clips___create: {
+  'clips/create': {
     requestBody: {
       content: {
         'application/json': {
@@ -12422,7 +12393,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:account*
    */
-  clips___delete: {
+  'clips/delete': {
     requestBody: {
       content: {
         'application/json': {
@@ -12474,7 +12445,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:account*
    */
-  clips___list: {
+  'clips/list': {
     responses: {
       /** @description OK (with results) */
       200: {
@@ -12520,7 +12491,7 @@ export type operations = {
    *
    * **Credential required**: *No* / **Permission**: *read:account*
    */
-  clips___notes: {
+  'clips/notes': {
     requestBody: {
       content: {
         'application/json': {
@@ -12580,7 +12551,7 @@ export type operations = {
    *
    * **Credential required**: *No* / **Permission**: *read:account*
    */
-  clips___show: {
+  'clips/show': {
     requestBody: {
       content: {
         'application/json': {
@@ -12634,7 +12605,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:account*
    */
-  clips___update: {
+  'clips/update': {
     requestBody: {
       content: {
         'application/json': {
@@ -12691,7 +12662,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:clip-favorite*
    */
-  clips___favorite: {
+  'clips/favorite': {
     requestBody: {
       content: {
         'application/json': {
@@ -12743,7 +12714,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:clip-favorite*
    */
-  clips___unfavorite: {
+  'clips/unfavorite': {
     requestBody: {
       content: {
         'application/json': {
@@ -12795,7 +12766,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:clip-favorite*
    */
-  'clips___my-favorites': {
+  'clips/my-favorites': {
     responses: {
       /** @description OK (with results) */
       200: {
@@ -12890,7 +12861,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:drive*
    */
-  drive___files: {
+  'drive/files': {
     requestBody: {
       content: {
         'application/json': {
@@ -12956,7 +12927,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:drive*
    */
-  'drive___files___attached-notes': {
+  'drive/files/attached-notes': {
     requestBody: {
       content: {
         'application/json': {
@@ -13016,7 +12987,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:drive*
    */
-  'drive___files___check-existence': {
+  'drive/files/check-existence': {
     requestBody: {
       content: {
         'application/json': {
@@ -13069,7 +13040,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:drive*
    */
-  drive___files___create: {
+  'drive/files/create': {
     requestBody: {
       content: {
         'multipart/form-data': {
@@ -13145,7 +13116,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:drive*
    */
-  drive___files___delete: {
+  'drive/files/delete': {
     requestBody: {
       content: {
         'application/json': {
@@ -13197,7 +13168,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:drive*
    */
-  'drive___files___find-by-hash': {
+  'drive/files/find-by-hash': {
     requestBody: {
       content: {
         'application/json': {
@@ -13250,7 +13221,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:drive*
    */
-  drive___files___find: {
+  'drive/files/find': {
     requestBody: {
       content: {
         'application/json': {
@@ -13308,7 +13279,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:drive*
    */
-  drive___files___show: {
+  'drive/files/show': {
     requestBody: {
       content: {
         'application/json': {
@@ -13363,7 +13334,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:drive*
    */
-  drive___files___update: {
+  'drive/files/update': {
     requestBody: {
       content: {
         'application/json': {
@@ -13422,7 +13393,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:drive*
    */
-  'drive___files___upload-from-url': {
+  'drive/files/upload-from-url': {
     requestBody: {
       content: {
         'application/json': {
@@ -13492,7 +13463,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:drive*
    */
-  drive___folders: {
+  'drive/folders': {
     requestBody: {
       content: {
         'application/json': {
@@ -13555,7 +13526,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:drive*
    */
-  drive___folders___create: {
+  'drive/folders/create': {
     requestBody: {
       content: {
         'application/json': {
@@ -13617,7 +13588,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:drive*
    */
-  drive___folders___delete: {
+  'drive/folders/delete': {
     requestBody: {
       content: {
         'application/json': {
@@ -13669,7 +13640,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:drive*
    */
-  drive___folders___find: {
+  'drive/folders/find': {
     requestBody: {
       content: {
         'application/json': {
@@ -13727,7 +13698,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:drive*
    */
-  drive___folders___show: {
+  'drive/folders/show': {
     requestBody: {
       content: {
         'application/json': {
@@ -13781,7 +13752,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:drive*
    */
-  drive___folders___update: {
+  'drive/folders/update': {
     requestBody: {
       content: {
         'application/json': {
@@ -13838,7 +13809,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:drive*
    */
-  drive___stream: {
+  'drive/stream': {
     requestBody: {
       content: {
         'application/json': {
@@ -13897,7 +13868,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  'email-address___available': {
+  'email-address/available': {
     requestBody: {
       content: {
         'application/json': {
@@ -14112,7 +14083,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  federation___followers: {
+  'federation/followers': {
     requestBody: {
       content: {
         'application/json': {
@@ -14171,7 +14142,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  federation___following: {
+  'federation/following': {
     requestBody: {
       content: {
         'application/json': {
@@ -14230,7 +14201,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  federation___instances: {
+  'federation/instances': {
     requestBody: {
       content: {
         'application/json': {
@@ -14297,7 +14268,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  'federation___show-instance': {
+  'federation/show-instance': {
     requestBody: {
       content: {
         'application/json': {
@@ -14354,7 +14325,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  'federation___update-remote-user': {
+  'federation/update-remote-user': {
     requestBody: {
       content: {
         'application/json': {
@@ -14406,7 +14377,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  federation___users: {
+  'federation/users': {
     requestBody: {
       content: {
         'application/json': {
@@ -14465,7 +14436,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  federation___stats: {
+  'federation/stats': {
     requestBody: {
       content: {
         'application/json': {
@@ -14524,7 +14495,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:following*
    */
-  following___create: {
+  'following/create': {
     requestBody: {
       content: {
         'application/json': {
@@ -14585,7 +14556,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:following*
    */
-  following___delete: {
+  'following/delete': {
     requestBody: {
       content: {
         'application/json': {
@@ -14645,7 +14616,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:following*
    */
-  following___update: {
+  'following/update': {
     requestBody: {
       content: {
         'application/json': {
@@ -14708,7 +14679,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:following*
    */
-  'following___update-all': {
+  'following/update-all': {
     requestBody: {
       content: {
         'application/json': {
@@ -14767,7 +14738,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:following*
    */
-  following___invalidate: {
+  'following/invalidate': {
     requestBody: {
       content: {
         'application/json': {
@@ -14827,7 +14798,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:following*
    */
-  following___requests___accept: {
+  'following/requests/accept': {
     requestBody: {
       content: {
         'application/json': {
@@ -14879,7 +14850,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:following*
    */
-  following___requests___cancel: {
+  'following/requests/cancel': {
     requestBody: {
       content: {
         'application/json': {
@@ -14933,7 +14904,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:following*
    */
-  following___requests___list: {
+  'following/requests/list': {
     requestBody: {
       content: {
         'application/json': {
@@ -14996,7 +14967,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:following*
    */
-  following___requests___reject: {
+  'following/requests/reject': {
     requestBody: {
       content: {
         'application/json': {
@@ -15048,7 +15019,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  gallery___featured: {
+  'gallery/featured': {
     requestBody: {
       content: {
         'application/json': {
@@ -15104,7 +15075,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  gallery___popular: {
+  'gallery/popular': {
     responses: {
       /** @description OK (with results) */
       200: {
@@ -15150,7 +15121,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  gallery___posts: {
+  'gallery/posts': {
     requestBody: {
       content: {
         'application/json': {
@@ -15208,7 +15179,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:gallery*
    */
-  gallery___posts___create: {
+  'gallery/posts/create': {
     requestBody: {
       content: {
         'application/json': {
@@ -15271,7 +15242,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:gallery*
    */
-  gallery___posts___delete: {
+  'gallery/posts/delete': {
     requestBody: {
       content: {
         'application/json': {
@@ -15323,7 +15294,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:gallery-likes*
    */
-  gallery___posts___like: {
+  'gallery/posts/like': {
     requestBody: {
       content: {
         'application/json': {
@@ -15375,7 +15346,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  gallery___posts___show: {
+  'gallery/posts/show': {
     requestBody: {
       content: {
         'application/json': {
@@ -15429,7 +15400,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:gallery-likes*
    */
-  gallery___posts___unlike: {
+  'gallery/posts/unlike': {
     requestBody: {
       content: {
         'application/json': {
@@ -15481,7 +15452,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:gallery*
    */
-  gallery___posts___update: {
+  'gallery/posts/update': {
     requestBody: {
       content: {
         'application/json': {
@@ -15650,7 +15621,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  hashtags___list: {
+  'hashtags/list': {
     requestBody: {
       content: {
         'application/json': {
@@ -15712,7 +15683,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  hashtags___search: {
+  'hashtags/search': {
     requestBody: {
       content: {
         'application/json': {
@@ -15769,7 +15740,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  hashtags___show: {
+  'hashtags/show': {
     requestBody: {
       content: {
         'application/json': {
@@ -15822,7 +15793,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  hashtags___trend: {
+  'hashtags/trend': {
     responses: {
       /** @description OK (with results) */
       200: {
@@ -15872,7 +15843,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  hashtags___users: {
+  'hashtags/users': {
     requestBody: {
       content: {
         'application/json': {
@@ -15986,7 +15957,7 @@ export type operations = {
    * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
-  i___2fa___done: {
+  'i/2fa/done': {
     requestBody: {
       content: {
         'application/json': {
@@ -16042,7 +16013,7 @@ export type operations = {
    * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
-  'i___2fa___key-done': {
+  'i/2fa/key-done': {
     requestBody: {
       content: {
         'application/json': {
@@ -16102,7 +16073,7 @@ export type operations = {
    * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
-  'i___2fa___password-less': {
+  'i/2fa/password-less': {
     requestBody: {
       content: {
         'application/json': {
@@ -16154,7 +16125,7 @@ export type operations = {
    * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
-  'i___2fa___register-key': {
+  'i/2fa/register-key': {
     requestBody: {
       content: {
         'application/json': {
@@ -16243,7 +16214,7 @@ export type operations = {
    * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
-  i___2fa___register: {
+  'i/2fa/register': {
     requestBody: {
       content: {
         'application/json': {
@@ -16304,7 +16275,7 @@ export type operations = {
    * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
-  'i___2fa___update-key': {
+  'i/2fa/update-key': {
     requestBody: {
       content: {
         'application/json': {
@@ -16357,7 +16328,7 @@ export type operations = {
    * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
-  'i___2fa___remove-key': {
+  'i/2fa/remove-key': {
     requestBody: {
       content: {
         'application/json': {
@@ -16411,7 +16382,7 @@ export type operations = {
    * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
-  i___2fa___unregister: {
+  'i/2fa/unregister': {
     requestBody: {
       content: {
         'application/json': {
@@ -16464,7 +16435,7 @@ export type operations = {
    * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
-  i___apps: {
+  'i/apps': {
     requestBody: {
       content: {
         'application/json': {
@@ -16528,7 +16499,7 @@ export type operations = {
    * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
-  'i___authorized-apps': {
+  'i/authorized-apps': {
     requestBody: {
       content: {
         'application/json': {
@@ -16596,7 +16567,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:account*
    */
-  'i___claim-achievement': {
+  'i/claim-achievement': {
     requestBody: {
       content: {
         'application/json': {
@@ -16649,7 +16620,7 @@ export type operations = {
    * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
-  'i___change-password': {
+  'i/change-password': {
     requestBody: {
       content: {
         'application/json': {
@@ -16703,7 +16674,7 @@ export type operations = {
    * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
-  'i___delete-account': {
+  'i/delete-account': {
     requestBody: {
       content: {
         'application/json': {
@@ -16756,7 +16727,7 @@ export type operations = {
    * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
-  'i___export-blocking': {
+  'i/export-blocking': {
     responses: {
       /** @description OK (without any results) */
       204: {
@@ -16807,7 +16778,7 @@ export type operations = {
    * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
-  'i___export-following': {
+  'i/export-following': {
     requestBody: {
       content: {
         'application/json': {
@@ -16868,7 +16839,7 @@ export type operations = {
    * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
-  'i___export-mute': {
+  'i/export-mute': {
     responses: {
       /** @description OK (without any results) */
       204: {
@@ -16919,7 +16890,7 @@ export type operations = {
    * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
-  'i___export-notes': {
+  'i/export-notes': {
     responses: {
       /** @description OK (without any results) */
       204: {
@@ -16970,7 +16941,7 @@ export type operations = {
    * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
-  'i___export-clips': {
+  'i/export-clips': {
     responses: {
       /** @description OK (without any results) */
       204: {
@@ -17021,7 +16992,7 @@ export type operations = {
    * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
-  'i___export-favorites': {
+  'i/export-favorites': {
     responses: {
       /** @description OK (without any results) */
       204: {
@@ -17072,7 +17043,7 @@ export type operations = {
    * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
-  'i___export-user-lists': {
+  'i/export-user-lists': {
     responses: {
       /** @description OK (without any results) */
       204: {
@@ -17123,7 +17094,7 @@ export type operations = {
    * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
-  'i___export-antennas': {
+  'i/export-antennas': {
     responses: {
       /** @description OK (without any results) */
       204: {
@@ -17173,7 +17144,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:favorites*
    */
-  i___favorites: {
+  'i/favorites': {
     requestBody: {
       content: {
         'application/json': {
@@ -17231,7 +17202,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:gallery-likes*
    */
-  i___gallery___likes: {
+  'i/gallery/likes': {
     requestBody: {
       content: {
         'application/json': {
@@ -17293,7 +17264,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:gallery*
    */
-  i___gallery___posts: {
+  'i/gallery/posts': {
     requestBody: {
       content: {
         'application/json': {
@@ -17352,7 +17323,7 @@ export type operations = {
    * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
-  'i___import-blocking': {
+  'i/import-blocking': {
     requestBody: {
       content: {
         'application/json': {
@@ -17411,7 +17382,7 @@ export type operations = {
    * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
-  'i___import-following': {
+  'i/import-following': {
     requestBody: {
       content: {
         'application/json': {
@@ -17471,7 +17442,7 @@ export type operations = {
    * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
-  'i___import-muting': {
+  'i/import-muting': {
     requestBody: {
       content: {
         'application/json': {
@@ -17530,7 +17501,7 @@ export type operations = {
    * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
-  'i___import-user-lists': {
+  'i/import-user-lists': {
     requestBody: {
       content: {
         'application/json': {
@@ -17589,7 +17560,7 @@ export type operations = {
    * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
-  'i___import-antennas': {
+  'i/import-antennas': {
     requestBody: {
       content: {
         'application/json': {
@@ -17647,7 +17618,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:notifications*
    */
-  i___notifications: {
+  'i/notifications': {
     requestBody: {
       content: {
         'application/json': {
@@ -17715,7 +17686,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:notifications*
    */
-  'i___notifications-grouped': {
+  'i/notifications-grouped': {
     requestBody: {
       content: {
         'application/json': {
@@ -17783,7 +17754,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:page-likes*
    */
-  'i___page-likes': {
+  'i/page-likes': {
     requestBody: {
       content: {
         'application/json': {
@@ -17845,7 +17816,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:pages*
    */
-  i___pages: {
+  'i/pages': {
     requestBody: {
       content: {
         'application/json': {
@@ -17903,7 +17874,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:account*
    */
-  i___pin: {
+  'i/pin': {
     requestBody: {
       content: {
         'application/json': {
@@ -17957,7 +17928,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:account*
    */
-  'i___read-all-unread-notes': {
+  'i/read-all-unread-notes': {
     responses: {
       /** @description OK (without any results) */
       204: {
@@ -18001,7 +17972,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:account*
    */
-  'i___read-announcement': {
+  'i/read-announcement': {
     requestBody: {
       content: {
         'application/json': {
@@ -18054,7 +18025,7 @@ export type operations = {
    * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
-  'i___regenerate-token': {
+  'i/regenerate-token': {
     requestBody: {
       content: {
         'application/json': {
@@ -18105,7 +18076,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:account*
    */
-  'i___registry___get-all': {
+  'i/registry/get-all': {
     requestBody: {
       content: {
         'application/json': {
@@ -18160,7 +18131,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:account*
    */
-  'i___registry___get-detail': {
+  'i/registry/get-detail': {
     requestBody: {
       content: {
         'application/json': {
@@ -18219,7 +18190,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:account*
    */
-  i___registry___get: {
+  'i/registry/get': {
     requestBody: {
       content: {
         'application/json': {
@@ -18275,7 +18246,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:account*
    */
-  'i___registry___keys-with-type': {
+  'i/registry/keys-with-type': {
     requestBody: {
       content: {
         'application/json': {
@@ -18332,7 +18303,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:account*
    */
-  i___registry___keys: {
+  'i/registry/keys': {
     requestBody: {
       content: {
         'application/json': {
@@ -18387,7 +18358,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:account*
    */
-  i___registry___remove: {
+  'i/registry/remove': {
     requestBody: {
       content: {
         'application/json': {
@@ -18442,7 +18413,7 @@ export type operations = {
    * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
-  'i___registry___scopes-with-domain': {
+  'i/registry/scopes-with-domain': {
     responses: {
       /** @description OK (with results) */
       200: {
@@ -18491,7 +18462,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:account*
    */
-  i___registry___set: {
+  'i/registry/set': {
     requestBody: {
       content: {
         'application/json': {
@@ -18547,7 +18518,7 @@ export type operations = {
    * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
-  'i___revoke-token': {
+  'i/revoke-token': {
     requestBody: {
       content: {
         'application/json': {
@@ -18601,7 +18572,7 @@ export type operations = {
    * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
-  'i___signin-history': {
+  'i/signin-history': {
     requestBody: {
       content: {
         'application/json': {
@@ -18659,7 +18630,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:account*
    */
-  i___unpin: {
+  'i/unpin': {
     requestBody: {
       content: {
         'application/json': {
@@ -18714,7 +18685,7 @@ export type operations = {
    * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
-  'i___update-email': {
+  'i/update-email': {
     requestBody: {
       content: {
         'application/json': {
@@ -18775,7 +18746,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:account*
    */
-  i___update: {
+  'i/update': {
     requestBody: {
       content: {
         'application/json': {
@@ -19009,7 +18980,7 @@ export type operations = {
    * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
-  i___move: {
+  'i/move': {
     requestBody: {
       content: {
         'application/json': {
@@ -19068,7 +19039,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:account*
    */
-  i___webhooks___create: {
+  'i/webhooks/create': {
     requestBody: {
       content: {
         'application/json': {
@@ -19138,7 +19109,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:account*
    */
-  i___webhooks___list: {
+  'i/webhooks/list': {
     responses: {
       /** @description OK (with results) */
       200: {
@@ -19197,7 +19168,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:account*
    */
-  i___webhooks___show: {
+  'i/webhooks/show': {
     requestBody: {
       content: {
         'application/json': {
@@ -19264,7 +19235,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:account*
    */
-  i___webhooks___update: {
+  'i/webhooks/update': {
     requestBody: {
       content: {
         'application/json': {
@@ -19322,7 +19293,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:account*
    */
-  i___webhooks___delete: {
+  'i/webhooks/delete': {
     requestBody: {
       content: {
         'application/json': {
@@ -19374,7 +19345,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:invite-codes*
    */
-  invite___create: {
+  'invite/create': {
     responses: {
       /** @description OK (with results) */
       200: {
@@ -19420,7 +19391,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:invite-codes*
    */
-  invite___delete: {
+  'invite/delete': {
     requestBody: {
       content: {
         'application/json': {
@@ -19472,7 +19443,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:invite-codes*
    */
-  invite___list: {
+  'invite/list': {
     requestBody: {
       content: {
         'application/json': {
@@ -19530,7 +19501,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:invite-codes*
    */
-  invite___limit: {
+  'invite/limit': {
     responses: {
       /** @description OK (with results) */
       200: {
@@ -19734,7 +19705,7 @@ export type operations = {
    * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
-  'miauth___gen-token': {
+  'miauth/gen-token': {
     requestBody: {
       content: {
         'application/json': {
@@ -19793,7 +19764,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:mutes*
    */
-  mute___create: {
+  'mute/create': {
     requestBody: {
       content: {
         'application/json': {
@@ -19853,7 +19824,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:mutes*
    */
-  mute___delete: {
+  'mute/delete': {
     requestBody: {
       content: {
         'application/json': {
@@ -19905,7 +19876,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:mutes*
    */
-  mute___list: {
+  'mute/list': {
     requestBody: {
       content: {
         'application/json': {
@@ -19963,7 +19934,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:mutes*
    */
-  'renote-mute___create': {
+  'renote-mute/create': {
     requestBody: {
       content: {
         'application/json': {
@@ -20021,7 +19992,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:mutes*
    */
-  'renote-mute___delete': {
+  'renote-mute/delete': {
     requestBody: {
       content: {
         'application/json': {
@@ -20073,7 +20044,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:mutes*
    */
-  'renote-mute___list': {
+  'renote-mute/list': {
     requestBody: {
       content: {
         'application/json': {
@@ -20131,7 +20102,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:account*
    */
-  my___apps: {
+  'my/apps': {
     requestBody: {
       content: {
         'application/json': {
@@ -20251,7 +20222,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  notes___children: {
+  'notes/children': {
     requestBody: {
       content: {
         'application/json': {
@@ -20311,7 +20282,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  notes___clips: {
+  'notes/clips': {
     requestBody: {
       content: {
         'application/json': {
@@ -20365,7 +20336,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  notes___conversation: {
+  'notes/conversation': {
     requestBody: {
       content: {
         'application/json': {
@@ -20423,7 +20394,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:notes*
    */
-  notes___create: {
+  'notes/create': {
     requestBody: {
       content: {
         'application/json': {
@@ -20518,7 +20489,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:notes*
    */
-  notes___delete: {
+  'notes/delete': {
     requestBody: {
       content: {
         'application/json': {
@@ -20576,7 +20547,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:favorites*
    */
-  notes___favorites___create: {
+  'notes/favorites/create': {
     requestBody: {
       content: {
         'application/json': {
@@ -20634,7 +20605,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:favorites*
    */
-  notes___favorites___delete: {
+  'notes/favorites/delete': {
     requestBody: {
       content: {
         'application/json': {
@@ -20686,7 +20657,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  notes___featured: {
+  'notes/featured': {
     requestBody: {
       content: {
         'application/json': {
@@ -20744,7 +20715,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  'notes___global-timeline': {
+  'notes/global-timeline': {
     requestBody: {
       content: {
         'application/json': {
@@ -20808,7 +20779,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:account*
    */
-  'notes___hybrid-timeline': {
+  'notes/hybrid-timeline': {
     requestBody: {
       content: {
         'application/json': {
@@ -20882,7 +20853,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  'notes___local-timeline': {
+  'notes/local-timeline': {
     requestBody: {
       content: {
         'application/json': {
@@ -20950,7 +20921,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:account*
    */
-  notes___mentions: {
+  'notes/mentions': {
     requestBody: {
       content: {
         'application/json': {
@@ -21011,7 +20982,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:account*
    */
-  notes___polls___recommendation: {
+  'notes/polls/recommendation': {
     requestBody: {
       content: {
         'application/json': {
@@ -21019,8 +20990,6 @@ export type operations = {
           limit?: number;
           /** @default 0 */
           offset?: number;
-          /** @default false */
-          excludeChannels?: boolean;
         };
       };
     };
@@ -21069,7 +21038,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:votes*
    */
-  notes___polls___vote: {
+  'notes/polls/vote': {
     requestBody: {
       content: {
         'application/json': {
@@ -21122,7 +21091,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  notes___reactions: {
+  'notes/reactions': {
     requestBody: {
       content: {
         'application/json': {
@@ -21183,7 +21152,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:reactions*
    */
-  notes___reactions___create: {
+  'notes/reactions/create': {
     requestBody: {
       content: {
         'application/json': {
@@ -21236,7 +21205,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:reactions*
    */
-  notes___reactions___delete: {
+  'notes/reactions/delete': {
     requestBody: {
       content: {
         'application/json': {
@@ -21294,7 +21263,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  notes___renotes: {
+  'notes/renotes': {
     requestBody: {
       content: {
         'application/json': {
@@ -21354,7 +21323,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  notes___replies: {
+  'notes/replies': {
     requestBody: {
       content: {
         'application/json': {
@@ -21414,7 +21383,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  'notes___search-by-tag': {
+  'notes/search-by-tag': {
     requestBody: {
       content: {
         'application/json': {
@@ -21486,7 +21455,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  notes___search: {
+  'notes/search': {
     requestBody: {
       content: {
         'application/json': {
@@ -21559,7 +21528,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  notes___show: {
+  'notes/show': {
     requestBody: {
       content: {
         'application/json': {
@@ -21613,7 +21582,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:account*
    */
-  notes___state: {
+  'notes/state': {
     requestBody: {
       content: {
         'application/json': {
@@ -21670,7 +21639,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:account*
    */
-  'notes___thread-muting___create': {
+  'notes/thread-muting/create': {
     requestBody: {
       content: {
         'application/json': {
@@ -21728,7 +21697,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:account*
    */
-  'notes___thread-muting___delete': {
+  'notes/thread-muting/delete': {
     requestBody: {
       content: {
         'application/json': {
@@ -21780,7 +21749,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:account*
    */
-  notes___timeline: {
+  'notes/timeline': {
     requestBody: {
       content: {
         'application/json': {
@@ -21852,7 +21821,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:account*
    */
-  notes___translate: {
+  'notes/translate': {
     requestBody: {
       content: {
         'application/json': {
@@ -21871,10 +21840,6 @@ export type operations = {
             text: string;
           };
         };
-      };
-      /** @description OK (without any results) */
-      204: {
-        content: never;
       };
       /** @description Client error */
       400: {
@@ -21914,7 +21879,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:notes*
    */
-  notes___unrenote: {
+  'notes/unrenote': {
     requestBody: {
       content: {
         'application/json': {
@@ -21972,7 +21937,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:account*
    */
-  'notes___user-list-timeline': {
+  'notes/user-list-timeline': {
     requestBody: {
       content: {
         'application/json': {
@@ -22049,7 +22014,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:notifications*
    */
-  notifications___create: {
+  'notifications/create': {
     requestBody: {
       content: {
         'application/json': {
@@ -22108,7 +22073,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:notifications*
    */
-  notifications___flush: {
+  'notifications/flush': {
     responses: {
       /** @description OK (without any results) */
       204: {
@@ -22152,7 +22117,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:notifications*
    */
-  'notifications___mark-all-as-read': {
+  'notifications/mark-all-as-read': {
     responses: {
       /** @description OK (without any results) */
       204: {
@@ -22196,7 +22161,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:notifications*
    */
-  'notifications___test-notification': {
+  'notifications/test-notification': {
     responses: {
       /** @description OK (without any results) */
       204: {
@@ -22301,7 +22266,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:pages*
    */
-  pages___create: {
+  'pages/create': {
     requestBody: {
       content: {
         'application/json': {
@@ -22380,7 +22345,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:pages*
    */
-  pages___delete: {
+  'pages/delete': {
     requestBody: {
       content: {
         'application/json': {
@@ -22432,7 +22397,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  pages___featured: {
+  'pages/featured': {
     responses: {
       /** @description OK (with results) */
       200: {
@@ -22478,7 +22443,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:page-likes*
    */
-  pages___like: {
+  'pages/like': {
     requestBody: {
       content: {
         'application/json': {
@@ -22530,7 +22495,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  pages___show: {
+  'pages/show': {
     requestBody: {
       content: {
         'application/json': {
@@ -22586,7 +22551,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:page-likes*
    */
-  pages___unlike: {
+  'pages/unlike': {
     requestBody: {
       content: {
         'application/json': {
@@ -22638,7 +22603,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:pages*
    */
-  pages___update: {
+  'pages/update': {
     requestBody: {
       content: {
         'application/json': {
@@ -22712,7 +22677,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:flash*
    */
-  flash___create: {
+  'flash/create': {
     requestBody: {
       content: {
         'application/json': {
@@ -22720,11 +22685,6 @@ export type operations = {
           summary: string;
           script: string;
           permissions: string[];
-          /**
-           * @default public
-           * @enum {string}
-           */
-          visibility?: 'public' | 'private';
         };
       };
     };
@@ -22779,7 +22739,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:flash*
    */
-  flash___delete: {
+  'flash/delete': {
     requestBody: {
       content: {
         'application/json': {
@@ -22831,7 +22791,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  flash___featured: {
+  'flash/featured': {
     responses: {
       /** @description OK (with results) */
       200: {
@@ -22877,7 +22837,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:flash-likes*
    */
-  flash___like: {
+  'flash/like': {
     requestBody: {
       content: {
         'application/json': {
@@ -22929,7 +22889,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  flash___show: {
+  'flash/show': {
     requestBody: {
       content: {
         'application/json': {
@@ -22983,7 +22943,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:flash-likes*
    */
-  flash___unlike: {
+  'flash/unlike': {
     requestBody: {
       content: {
         'application/json': {
@@ -23035,7 +22995,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:flash*
    */
-  flash___update: {
+  'flash/update': {
     requestBody: {
       content: {
         'application/json': {
@@ -23099,7 +23059,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:flash*
    */
-  flash___my: {
+  'flash/my': {
     requestBody: {
       content: {
         'application/json': {
@@ -23157,7 +23117,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:flash-likes*
    */
-  'flash___my-likes': {
+  'flash/my-likes': {
     requestBody: {
       content: {
         'application/json': {
@@ -23313,7 +23273,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:account*
    */
-  promo___read: {
+  'promo/read': {
     requestBody: {
       content: {
         'application/json': {
@@ -23365,7 +23325,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:account*
    */
-  roles___list: {
+  'roles/list': {
     responses: {
       /** @description OK (with results) */
       200: {
@@ -23411,7 +23371,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  roles___show: {
+  'roles/show': {
     requestBody: {
       content: {
         'application/json': {
@@ -23465,7 +23425,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  roles___users: {
+  'roles/users': {
     requestBody: {
       content: {
         'application/json': {
@@ -23529,7 +23489,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:account*
    */
-  roles___notes: {
+  'roles/notes': {
     requestBody: {
       content: {
         'application/json': {
@@ -23859,7 +23819,7 @@ export type operations = {
    * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
-  'sw___show-registration': {
+  'sw/show-registration': {
     requestBody: {
       content: {
         'application/json': {
@@ -23921,7 +23881,7 @@ export type operations = {
    * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
-  'sw___update-registration': {
+  'sw/update-registration': {
     requestBody: {
       content: {
         'application/json': {
@@ -23980,7 +23940,7 @@ export type operations = {
    * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
    * **Credential required**: *Yes*
    */
-  sw___register: {
+  'sw/register': {
     requestBody: {
       content: {
         'application/json': {
@@ -24044,7 +24004,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  sw___unregister: {
+  'sw/unregister': {
     requestBody: {
       content: {
         'application/json': {
@@ -24163,7 +24123,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  username___available: {
+  'username/available': {
     requestBody: {
       content: {
         'application/json': {
@@ -24291,7 +24251,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  users___clips: {
+  'users/clips': {
     requestBody: {
       content: {
         'application/json': {
@@ -24351,7 +24311,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  users___followers: {
+  'users/followers': {
     requestBody: {
       content: {
         'application/json': {
@@ -24414,7 +24374,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  users___following: {
+  'users/following': {
     requestBody: {
       content: {
         'application/json': {
@@ -24478,7 +24438,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  users___gallery___posts: {
+  'users/gallery/posts': {
     requestBody: {
       content: {
         'application/json': {
@@ -24538,7 +24498,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  'users___get-frequently-replied-users': {
+  'users/get-frequently-replied-users': {
     requestBody: {
       content: {
         'application/json': {
@@ -24597,7 +24557,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  'users___featured-notes': {
+  'users/featured-notes': {
     requestBody: {
       content: {
         'application/json': {
@@ -24655,7 +24615,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:account*
    */
-  users___lists___create: {
+  'users/lists/create': {
     requestBody: {
       content: {
         'application/json': {
@@ -24708,7 +24668,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:account*
    */
-  users___lists___delete: {
+  'users/lists/delete': {
     requestBody: {
       content: {
         'application/json': {
@@ -24760,7 +24720,7 @@ export type operations = {
    *
    * **Credential required**: *No* / **Permission**: *read:account*
    */
-  users___lists___list: {
+  'users/lists/list': {
     requestBody: {
       content: {
         'application/json': {
@@ -24814,7 +24774,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:account*
    */
-  users___lists___pull: {
+  'users/lists/pull': {
     requestBody: {
       content: {
         'application/json': {
@@ -24868,7 +24828,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:account*
    */
-  users___lists___push: {
+  'users/lists/push': {
     requestBody: {
       content: {
         'application/json': {
@@ -24928,7 +24888,7 @@ export type operations = {
    *
    * **Credential required**: *No* / **Permission**: *read:account*
    */
-  users___lists___show: {
+  'users/lists/show': {
     requestBody: {
       content: {
         'application/json': {
@@ -24984,7 +24944,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:account*
    */
-  users___lists___favorite: {
+  'users/lists/favorite': {
     requestBody: {
       content: {
         'application/json': {
@@ -25036,7 +24996,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:account*
    */
-  users___lists___unfavorite: {
+  'users/lists/unfavorite': {
     requestBody: {
       content: {
         'application/json': {
@@ -25088,7 +25048,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:account*
    */
-  users___lists___update: {
+  'users/lists/update': {
     requestBody: {
       content: {
         'application/json': {
@@ -25144,7 +25104,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:account*
    */
-  'users___lists___create-from-public': {
+  'users/lists/create-from-public': {
     requestBody: {
       content: {
         'application/json': {
@@ -25199,7 +25159,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:account*
    */
-  'users___lists___update-membership': {
+  'users/lists/update-membership': {
     requestBody: {
       content: {
         'application/json': {
@@ -25254,7 +25214,7 @@ export type operations = {
    *
    * **Credential required**: *No* / **Permission**: *read:account*
    */
-  'users___lists___get-memberships': {
+  'users/lists/get-memberships': {
     requestBody: {
       content: {
         'application/json': {
@@ -25325,7 +25285,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  users___notes: {
+  'users/notes': {
     requestBody: {
       content: {
         'application/json': {
@@ -25397,7 +25357,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  users___pages: {
+  'users/pages': {
     requestBody: {
       content: {
         'application/json': {
@@ -25457,7 +25417,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  users___flashs: {
+  'users/flashs': {
     requestBody: {
       content: {
         'application/json': {
@@ -25517,7 +25477,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  users___reactions: {
+  'users/reactions': {
     requestBody: {
       content: {
         'application/json': {
@@ -25579,7 +25539,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:account*
    */
-  users___recommendation: {
+  'users/recommendation': {
     requestBody: {
       content: {
         'application/json': {
@@ -25635,7 +25595,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:account*
    */
-  users___relation: {
+  'users/relation': {
     requestBody: {
       content: {
         'application/json': {
@@ -25710,7 +25670,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:report-abuse*
    */
-  'users___report-abuse': {
+  'users/report-abuse': {
     requestBody: {
       content: {
         'application/json': {
@@ -25763,7 +25723,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  'users___search-by-username-and-host': {
+  'users/search-by-username-and-host': {
     requestBody: {
       content: {
         'application/json': {
@@ -25821,7 +25781,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  users___search: {
+  'users/search': {
     requestBody: {
       content: {
         'application/json': {
@@ -25885,7 +25845,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  users___show: {
+  'users/show': {
     requestBody: {
       content: {
         'application/json': {
@@ -25943,7 +25903,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  users___achievements: {
+  'users/achievements': {
     requestBody: {
       content: {
         'application/json': {
@@ -26000,7 +25960,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:account*
    */
-  'users___update-memo': {
+  'users/update-memo': {
     requestBody: {
       content: {
         'application/json': {
@@ -26067,52 +26027,7 @@ export type operations = {
       200: {
         content: {
           'application/json': {
-            image?: {
-              link?: string;
-              url: string;
-              title?: string;
-            };
-            paginationLinks?: {
-              self?: string;
-              first?: string;
-              next?: string;
-              last?: string;
-              prev?: string;
-            };
-            link?: string;
-            title?: string;
-            items: {
-                link?: string;
-                guid?: string;
-                title?: string;
-                pubDate?: string;
-                creator?: string;
-                summary?: string;
-                content?: string;
-                isoDate?: string;
-                categories?: string[];
-                contentSnippet?: string;
-                enclosure?: {
-                  url: string;
-                  length?: number;
-                  type?: string;
-                };
-              }[];
-            feedUrl?: string;
-            description?: string;
-            itunes?: {
-              image?: string;
-              owner?: {
-                name?: string;
-                email?: string;
-              };
-              author?: string;
-              summary?: string;
-              explicit?: string;
-              categories?: string[];
-              keywords?: string[];
-              [key: string]: unknown;
-            };
+            items: Record<string, never>[];
           };
         };
       };
@@ -26271,7 +26186,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:account*
    */
-  'bubble-game___register': {
+  'bubble-game/register': {
     requestBody: {
       content: {
         'application/json': {
@@ -26332,7 +26247,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  'bubble-game___ranking': {
+  'bubble-game/ranking': {
     requestBody: {
       content: {
         'application/json': {
@@ -26390,7 +26305,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:account*
    */
-  'reversi___cancel-match': {
+  'reversi/cancel-match': {
     requestBody: {
       content: {
         'application/json': {
@@ -26442,7 +26357,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  reversi___games: {
+  'reversi/games': {
     requestBody: {
       content: {
         'application/json': {
@@ -26502,7 +26417,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:account*
    */
-  reversi___match: {
+  'reversi/match': {
     requestBody: {
       content: {
         'application/json': {
@@ -26564,7 +26479,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *read:account*
    */
-  reversi___invitations: {
+  'reversi/invitations': {
     responses: {
       /** @description OK (with results) */
       200: {
@@ -26610,7 +26525,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  'reversi___show-game': {
+  'reversi/show-game': {
     requestBody: {
       content: {
         'application/json': {
@@ -26664,7 +26579,7 @@ export type operations = {
    *
    * **Credential required**: *Yes* / **Permission**: *write:account*
    */
-  reversi___surrender: {
+  'reversi/surrender': {
     requestBody: {
       content: {
         'application/json': {
@@ -26716,7 +26631,7 @@ export type operations = {
    *
    * **Credential required**: *No*
    */
-  reversi___verify: {
+  'reversi/verify': {
     requestBody: {
       content: {
         'application/json': {

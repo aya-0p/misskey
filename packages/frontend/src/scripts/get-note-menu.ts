@@ -26,14 +26,6 @@ export async function getNoteClipMenu(props: {
 	isDeleted: Ref<boolean>;
 	currentClip?: Misskey.entities.Clip;
 }) {
-	function getClipName(clip: Misskey.entities.Clip) {
-		if ($i && clip.userId === $i.id && clip.notesCount != null) {
-			return `${clip.name} (${clip.notesCount}/${$i.policies.noteEachClipsLimit})`;
-		} else {
-			return clip.name;
-		}
-	}
-
 	const isRenote = (
 		props.note.renote != null &&
 		props.note.text == null &&
@@ -45,7 +37,7 @@ export async function getNoteClipMenu(props: {
 
 	const clips = await clipsCache.fetch();
 	const menu: MenuItem[] = [...clips.map(clip => ({
-		text: getClipName(clip),
+		text: clip.name,
 		action: () => {
 			claimAchievement('noteClipped1');
 			os.promiseDialog(
@@ -58,18 +50,7 @@ export async function getNoteClipMenu(props: {
 							text: i18n.tsx.confirmToUnclipAlreadyClippedNote({ name: clip.name }),
 						});
 						if (!confirm.canceled) {
-							os.apiWithDialog('clips/remove-note', { clipId: clip.id, noteId: appearNote.id }).then(() => {
-								clipsCache.set(clips.map(c => {
-									if (c.id === clip.id) {
-										return {
-											...c,
-											notesCount: Math.max(0, ((c.notesCount ?? 0) - 1)),
-										};
-									} else {
-										return c;
-									}
-								}));
-							});
+							os.apiWithDialog('clips/remove-note', { clipId: clip.id, noteId: appearNote.id });
 							if (props.currentClip?.id === clip.id) props.isDeleted.value = true;
 						}
 					} else {
@@ -79,18 +60,7 @@ export async function getNoteClipMenu(props: {
 						});
 					}
 				},
-			).then(() => {
-				clipsCache.set(clips.map(c => {
-					if (c.id === clip.id) {
-						return {
-							...c,
-							notesCount: (c.notesCount ?? 0) + 1,
-						};
-					} else {
-						return c;
-					}
-				}));
-			});
+			);
 		},
 	})), { type: 'divider' }, {
 		icon: 'ti ti-plus',
@@ -492,9 +462,10 @@ export function getNoteMenu(props: {
 	};
 }
 
-type Visibility = (typeof Misskey.noteVisibilities)[number];
+type Visibility = 'public' | 'home' | 'followers' | 'specified';
 
-function smallerVisibility(a: Visibility, b: Visibility): Visibility {
+// defaultStore.state.visibilityがstringなためstringも受け付けている
+function smallerVisibility(a: Visibility | string, b: Visibility | string): Visibility {
 	if (a === 'specified' || b === 'specified') return 'specified';
 	if (a === 'followers' || b === 'followers') return 'followers';
 	if (a === 'home' || b === 'home') return 'home';

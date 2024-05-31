@@ -18,6 +18,7 @@ import { DI } from '@/di-symbols.js';
 import type Logger from '@/logger.js';
 import * as Acct from '@/misc/acct.js';
 import { genIdenticon } from '@/misc/gen-identicon.js';
+import { createTemp } from '@/misc/create-temp.js';
 import { UserEntityService } from '@/core/entities/UserEntityService.js';
 import { LoggerService } from '@/core/LoggerService.js';
 import { bindThis } from '@/decorators.js';
@@ -119,20 +120,12 @@ export class ServerService implements OnApplicationShutdown {
 				return;
 			}
 
-			const emojiPath = path.replace(/\.webp$/i, '');
-			const pathChunks = emojiPath.split('@');
-
-			if (pathChunks.length > 2) {
-				reply.code(400);
-				return;
-			}
-
-			const name = pathChunks.shift();
-			const host = pathChunks.pop();
+			const name = path.split('@')[0].replace(/\.webp$/i, '');
+			const host = path.split('@')[1]?.replace(/\.webp$/i, '');
 
 			const emoji = await this.emojisRepository.findOneBy({
 				// `@.` is the spec of ReactionService.decodeReaction
-				host: (host === undefined || host === '.') ? IsNull() : host,
+				host: (host == null || host === '.') ? IsNull() : host,
 				name: name,
 			});
 
@@ -191,7 +184,9 @@ export class ServerService implements OnApplicationShutdown {
 			reply.header('Cache-Control', 'public, max-age=86400');
 
 			if ((await this.metaService.fetch()).enableIdenticonGeneration) {
-				return await genIdenticon(request.params.x);
+				const [temp, cleanup] = await createTemp();
+				await genIdenticon(request.params.x, fs.createWriteStream(temp));
+				return fs.createReadStream(temp).on('close', () => cleanup());
 			} else {
 				return reply.redirect('/static-assets/avatar.png');
 			}
