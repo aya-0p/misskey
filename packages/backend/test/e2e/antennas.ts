@@ -42,7 +42,6 @@ describe('アンテナ', () => {
 		excludeKeywords: [['']],
 		keywords: [['keyword']],
 		name: 'test',
-		notify: false,
 		src: 'all' as const,
 		userListId: null,
 		users: [''],
@@ -154,14 +153,14 @@ describe('アンテナ', () => {
 			isActive: true,
 			keywords: [['keyword']],
 			name: 'test',
-			notify: false,
 			src: 'all',
 			userListId: null,
 			users: [''],
 			withFile: false,
 			withReplies: false,
 			localOnly: false,
-		} as Antenna;
+			notify: false,
+		};
 		assert.deepStrictEqual(response, expected);
 	});
 
@@ -202,27 +201,25 @@ describe('アンテナ', () => {
 	});
 
 	const antennaParamPattern = [
-		{ parameters: (): object => ({ name: 'x'.repeat(100) }) },
-		{ parameters: (): object => ({ name: 'x' }) },
-		{ parameters: (): object => ({ src: 'home' }) },
-		{ parameters: (): object => ({ src: 'all' }) },
-		{ parameters: (): object => ({ src: 'users' }) },
-		{ parameters: (): object => ({ src: 'list' }) },
-		{ parameters: (): object => ({ userListId: null }) },
-		{ parameters: (): object => ({ src: 'list', userListId: aliceList.id }) },
-		{ parameters: (): object => ({ keywords: [['x']] }) },
-		{ parameters: (): object => ({ keywords: [['a', 'b', 'c'], ['x'], ['y'], ['z']] }) },
-		{ parameters: (): object => ({ excludeKeywords: [['a', 'b', 'c'], ['x'], ['y'], ['z']] }) },
-		{ parameters: (): object => ({ users: [alice.username] }) },
-		{ parameters: (): object => ({ users: [alice.username, bob.username, carol.username] }) },
-		{ parameters: (): object => ({ caseSensitive: false }) },
-		{ parameters: (): object => ({ caseSensitive: true }) },
-		{ parameters: (): object => ({ withReplies: false }) },
-		{ parameters: (): object => ({ withReplies: true }) },
-		{ parameters: (): object => ({ withFile: false }) },
-		{ parameters: (): object => ({ withFile: true }) },
-		{ parameters: (): object => ({ notify: false }) },
-		{ parameters: (): object => ({ notify: true }) },
+		{ parameters: () => ({ name: 'x'.repeat(100) }) },
+		{ parameters: () => ({ name: 'x' }) },
+		{ parameters: () => ({ src: 'home' as const }) },
+		{ parameters: () => ({ src: 'all' as const }) },
+		{ parameters: () => ({ src: 'users' as const }) },
+		{ parameters: () => ({ src: 'list' as const }) },
+		{ parameters: () => ({ userListId: null }) },
+		{ parameters: () => ({ src: 'list' as const, userListId: aliceList.id }) },
+		{ parameters: () => ({ keywords: [['x']] }) },
+		{ parameters: () => ({ keywords: [['a', 'b', 'c'], ['x'], ['y'], ['z']] }) },
+		{ parameters: () => ({ excludeKeywords: [['a', 'b', 'c'], ['x'], ['y'], ['z']] }) },
+		{ parameters: () => ({ users: [alice.username] }) },
+		{ parameters: () => ({ users: [alice.username, bob.username, carol.username] }) },
+		{ parameters: () => ({ caseSensitive: false }) },
+		{ parameters: () => ({ caseSensitive: true }) },
+		{ parameters: () => ({ withReplies: false }) },
+		{ parameters: () => ({ withReplies: true }) },
+		{ parameters: () => ({ withFile: false }) },
+		{ parameters: () => ({ withFile: true }) },
 	];
 	test.each(antennaParamPattern)('を作成できること($#)', async ({ parameters }) => {
 		const response = await successfulApiCall({
