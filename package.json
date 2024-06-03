@@ -1,10 +1,10 @@
 {
 	"name": "misskey",
-	"version": "2024.5.0",
+	"version": "2024.3.1-custom-1",
 	"codename": "nasubi",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/misskey-dev/misskey.git"
+		"url": "https://github.com/aya-0p/misskey.git"
 	},
 	"packageManager": "pnpm@9.0.6",
 	"workspaces": [
