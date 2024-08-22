@@ -22,7 +22,7 @@ export const meta = {
 
 	limit: {
 		duration: ms('1hour'),
-		max: 10,
+		max: 120, // 1時間に120回 (default: 10)
 	},
 
 	errors: {
