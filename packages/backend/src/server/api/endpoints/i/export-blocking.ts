@@ -13,7 +13,7 @@ export const meta = {
 	requireCredential: true,
 	limit: {
 		duration: ms('1hour'),
-		max: 1,
+		max: 1, // 1時間に1回 (default: 1)
 	},
 } as const;
 

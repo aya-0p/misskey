@@ -22,7 +22,7 @@ export const meta = {
 
 	limit: {
 		duration: ms('1hour'),
-		max: 120,
+		max: 900, // 1時間に900回 (default: 120)
 	},
 
 	requireFile: true,

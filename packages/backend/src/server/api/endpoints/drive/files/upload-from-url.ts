@@ -15,7 +15,7 @@ export const meta = {
 
 	limit: {
 		duration: ms('1hour'),
-		max: 60,
+		max: 900, // 1時間に900回 (default: 60)
 	},
 
 	description: 'Request the server to download a new drive file from the specified URL.',
