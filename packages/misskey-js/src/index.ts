@@ -14,6 +14,7 @@ export const followingVisibilities = consts.followingVisibilities;
 export const followersVisibilities = consts.followersVisibilities;
 export const moderationLogTypes = consts.moderationLogTypes;
 export const reversiUpdateKeys = consts.reversiUpdateKeys;
+export const reversiUpdateKeys = consts.reversiUpdateKeys;
 
 // api extractor not supported yet
 //export * as api from './api.js';

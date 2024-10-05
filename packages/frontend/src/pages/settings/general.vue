@@ -11,7 +11,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 		<template #caption>
 			<I18n :src="i18n.ts.i18nInfo" tag="span">
 				<template #link>
-					<MkLink url="https://crowdin.com/project/misskey">Crowdin</MkLink>
+					<MkLink url="https://github.com/aya-0p/misskey/issues/new?assignees=&labels=Translation&projects=&template=03_translate.yml">GitHub Issues</MkLink>
 				</template>
 			</I18n>
 		</template>
