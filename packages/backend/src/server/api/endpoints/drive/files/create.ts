@@ -21,10 +21,10 @@ export const meta = {
 
 	prohibitMoved: true,
 
-	// limit: {
-	// 	duration: ms('1hour'),
-	// 	max: 900, // 1時間に900回 (default: 120)
-	// },
+	limit: {
+		duration: ms('1hour'),
+		max: 900, // 1時間に900回 (default: 120)
+	},
 
 	requireFile: true,
 
