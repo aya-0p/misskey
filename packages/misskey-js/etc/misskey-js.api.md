@@ -1184,6 +1184,10 @@ export type Endpoints = Overwrite<Endpoints_2, {
             };
         };
     };
+    'signin-with-passkey': {
+        req: SigninWithPasskeyRequest;
+        res: SigninWithPasskeyResponse;
+    };
     'admin/roles/create': {
         req: Overwrite<AdminRolesCreateRequest, {
             policies: PartialRolePolicyOverride;
@@ -3096,6 +3100,19 @@ type SigninWithPasskeyRequest = {
 // @public (undocumented)
 type SigninWithPasskeyResponse = {
     signinResponse: SigninFlowResponse;
+};
+
+// @public (undocumented)
+type SigninWithPasskeyRequest = {
+    credential?: object;
+    context?: string;
+};
+
+// @public (undocumented)
+type SigninWithPasskeyResponse = {
+    option?: object;
+    context?: string;
+    signinResponse?: SigninResponse;
 };
 
 // @public (undocumented)

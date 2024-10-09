@@ -101,6 +101,10 @@ export type Endpoints = Overwrite<
 				},
 			},
 		},
+		'signin-with-passkey': {
+			req: SigninWithPasskeyRequest;
+			res: SigninWithPasskeyResponse;
+		}
 		'admin/roles/create': {
 			req: Overwrite<AdminRolesCreateRequest, { policies: PartialRolePolicyOverride }>;
 			res: AdminRolesCreateResponse;

@@ -18,7 +18,7 @@ export const meta = {
 
 	limit: {
 		duration: ms('1hour'),
-		max: 10,
+		max: 60, // 1時間に60回 (default: 10)
 	},
 
 	requireCredential: true,
