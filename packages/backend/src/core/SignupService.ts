@@ -58,7 +58,7 @@ export class SignupService {
 		let hash = passwordHash;
 
 		// Validate username
-		if (!this.userEntityService.validateLocalUsername(username)) {
+		if (!this.userEntityService.validateLocalUsername(username) || username.length < 6) { // ユーザー名の長さは6以上
 			throw new Error('INVALID_USERNAME');
 		}
 
