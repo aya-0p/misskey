@@ -29,7 +29,7 @@ export const meta = {
 
 	limit: {
 		duration: ms('1hour'),
-		max: 3600, // 1時間に3600回 (default: 300)
+		max: 50, // 1時間に50回 (default: 300)
 	},
 
 	kind: 'write:notes',
