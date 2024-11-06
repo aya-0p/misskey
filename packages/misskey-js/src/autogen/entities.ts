@@ -65,6 +65,7 @@ export type AdminEmojiUpdateRequest = operations['admin___emoji___update']['requ
 export type AdminFederationDeleteAllFilesRequest = operations['admin___federation___delete-all-files']['requestBody']['content']['application/json'];
 export type AdminFederationRefreshRemoteInstanceMetadataRequest = operations['admin___federation___refresh-remote-instance-metadata']['requestBody']['content']['application/json'];
 export type AdminFederationRemoveAllFollowingRequest = operations['admin___federation___remove-all-following']['requestBody']['content']['application/json'];
+export type AdminFederationRemoveAllFolloweeRequest = operations['admin___federation___remove-all-followee']['requestBody']['content']['application/json'];
 export type AdminFederationUpdateInstanceRequest = operations['admin___federation___update-instance']['requestBody']['content']['application/json'];
 export type AdminGetIndexStatsResponse = operations['admin___get-index-stats']['responses']['200']['content']['application/json'];
 export type AdminGetTableStatsResponse = operations['admin___get-table-stats']['responses']['200']['content']['application/json'];
