@@ -215,6 +215,9 @@ type AdminFederationRefreshRemoteInstanceMetadataRequest = operations['admin___f
 type AdminFederationRemoveAllFollowingRequest = operations['admin___federation___remove-all-following']['requestBody']['content']['application/json'];
 
 // @public (undocumented)
+type AdminFederationRemoveAllFolloweeRequest = operations['admin___federation___remove-all-followee']['requestBody']['content']['application/json'];
+
+// @public (undocumented)
 type AdminFederationUpdateInstanceRequest = operations['admin___federation___update-instance']['requestBody']['content']['application/json'];
 
 // @public (undocumented)
@@ -1288,6 +1291,7 @@ declare namespace entities {
         AdminFederationDeleteAllFilesRequest,
         AdminFederationRefreshRemoteInstanceMetadataRequest,
         AdminFederationRemoveAllFollowingRequest,
+        AdminFederationRemoveAllFolloweeRequest,
         AdminFederationUpdateInstanceRequest,
         AdminGetIndexStatsResponse,
         AdminGetTableStatsResponse,

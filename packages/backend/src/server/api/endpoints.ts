@@ -57,6 +57,7 @@ import * as ep___admin_federation_deleteAllFiles from './endpoints/admin/federat
 import * as ep___admin_federation_refreshRemoteInstanceMetadata
 	from './endpoints/admin/federation/refresh-remote-instance-metadata.js';
 import * as ep___admin_federation_removeAllFollowing from './endpoints/admin/federation/remove-all-following.js';
+import * as ep___admin_federation_removeAllFollowee from './endpoints/admin/federation/remove-all-followee.js';
 import * as ep___admin_federation_updateInstance from './endpoints/admin/federation/update-instance.js';
 import * as ep___admin_getIndexStats from './endpoints/admin/get-index-stats.js';
 import * as ep___admin_getTableStats from './endpoints/admin/get-table-stats.js';
@@ -443,6 +444,7 @@ const eps = [
 	['admin/federation/delete-all-files', ep___admin_federation_deleteAllFiles],
 	['admin/federation/refresh-remote-instance-metadata', ep___admin_federation_refreshRemoteInstanceMetadata],
 	['admin/federation/remove-all-following', ep___admin_federation_removeAllFollowing],
+	['admin/federation/remove-all-followee', ep___admin_federation_removeAllFollowee],
 	['admin/federation/update-instance', ep___admin_federation_updateInstance],
 	['admin/get-index-stats', ep___admin_getIndexStats],
 	['admin/get-table-stats', ep___admin_getTableStats],
