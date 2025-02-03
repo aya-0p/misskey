@@ -28,7 +28,7 @@ export const meta = {
 	prohibitMoved: true,
 	limit: {
 		duration: ms('1day'),
-		max: 5,
+		max: 5, // 1日に5回 (default: 5)
 	},
 
 	errors: {

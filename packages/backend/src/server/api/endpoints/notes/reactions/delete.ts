@@ -19,8 +19,7 @@ export const meta = {
 
 	limit: {
 		duration: ms('1hour'),
-		max: 60,
-		minInterval: ms('3sec'),
+		max: 3600, // 1時間に3600回 (default: 60 & 3秒に1回)
 	},
 
 	errors: {
