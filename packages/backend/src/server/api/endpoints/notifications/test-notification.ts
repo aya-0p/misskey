@@ -4,6 +4,7 @@
  */
 
 import { Injectable } from '@nestjs/common';
+import ms from 'ms';
 import { Endpoint } from '@/server/api/endpoint-base.js';
 import { NotificationService } from '@/core/NotificationService.js';
 
@@ -15,8 +16,8 @@ export const meta = {
 	kind: 'write:notifications',
 
 	limit: {
-		duration: 1000 * 60,
-		max: 10,
+		duration: ms('1min'),
+		max: 30, // 1分に30回 (default: 10)
 	},
 } as const;
 
