@@ -12,8 +12,8 @@ export const meta = {
 	secure: true,
 	requireCredential: true,
 	limit: {
-		duration: ms('1min'),
-		max: 1,
+		duration: ms('1hour'),
+		max: 60, // 1時間に60回 (default: 1分に1回)
 	},
 } as const;
 
