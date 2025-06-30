@@ -14,8 +14,8 @@ SPDX-License-Identifier: AGPL-3.0-only
 				<template #label>{{ i18n.ts.invitationCode }}</template>
 				<template #prefix><i class="ti ti-key"></i></template>
 			</MkInput>
-			<MkInput v-else v-model="invitationCode" type="text" :spellcheck="false">
-				<template #label>{{ i18n.ts.invitationCode2 }}</template>
+			<MkInput v-if="!instance.disableRegistration && instance.emailRequiredForSignup" v-model="invitationCode" type="text" :spellcheck="false">
+				<template #label>{{ i18n.ts.invitationCodeOpt }}</template>
 				<template #prefix><i class="ti ti-key"></i></template>
 			</MkInput>
 			<MkInput v-model="username" type="text" pattern="^[a-zA-Z0-9_]{1,20}$" :spellcheck="false" autocomplete="username" required data-cy-signup-username @update:modelValue="onChangeUsername">

@@ -498,7 +498,7 @@ signinRequired: "続行する前に、登録またはログインが必要です
 signinOrContinueOnRemote: "続行するには、お使いのサーバーに移動するか、このサーバーに登録・ログインする必要があります"
 invitations: "招待"
 invitationCode: "招待コード"
-invitationCode2: "招待コード(入力するとメール認証を省略できます)"
+invitationCodeOpt: "招待コード(入力するとメール認証を省略できます)"
 checking: "確認しています"
 available: "利用できます"
 unavailable: "利用できません"
