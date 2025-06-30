@@ -2011,6 +2011,10 @@ export interface Locale extends ILocale {
      */
     "invitationCode": string;
     /**
+     * 招待コード(入力するとメール認証を省略できます)
+     */
+    "invitationCode2": string;
+    /**
      * 確認しています
      */
     "checking": string;
