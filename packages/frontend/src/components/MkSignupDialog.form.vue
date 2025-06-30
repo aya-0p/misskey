@@ -284,7 +284,7 @@ async function onSubmit(): Promise<void> {
 	});
 
 	if (res && res.ok) {
-		if (res.status === 204 || (instance.emailRequiredForSignup && !(await res.json().catch(() => {})).token)) {
+		if (res.status === 204 || (instance.emailRequiredForSignup && !signupPayload.invitationCode)) {
 			os.alert({
 				type: 'success',
 				title: i18n.ts._signup.almostThere,

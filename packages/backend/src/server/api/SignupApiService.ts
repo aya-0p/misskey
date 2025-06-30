@@ -115,17 +115,9 @@ export class SignupApiService {
 		const emailAddress = body['emailAddress'];
 
 		// disableRegistration === false, emailRequiredForSignup === trueでinvitationCodeが存在する場合、email認証を省略する
-		// invitationCodeが存在したとしてもemailAddressが存在し、有効であればinvitationCodeのチェックを行わない(使ったことにもしない)
 		let bypassEmail = false;
 		if (!this.meta.disableRegistration && this.meta.emailRequiredForSignup && invitationCode) {
-			if (emailAddress == null || typeof emailAddress !== 'string') {
-				bypassEmail = true;
-			} else {
-				const res = await this.emailService.validateEmailForAccount(emailAddress);
-				if (!res.available) {
-					bypassEmail = true;
-				}
-			}
+			bypassEmail = true;
 		}
 		if (this.meta.emailRequiredForSignup && !bypassEmail) {
 			if (emailAddress == null || typeof emailAddress !== 'string') {
