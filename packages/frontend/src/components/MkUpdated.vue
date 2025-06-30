@@ -27,7 +27,7 @@ const modal = useTemplateRef('modal');
 
 function whatIsNew() {
 	modal.value?.close();
-	window.open(`https://4587-aya-0p.work/misskey/updates#${version}`, '_blank');
+	window.open(`https://ay0.org/misskey/updates#${version}`, '_blank');
 }
 
 onMounted(() => {
