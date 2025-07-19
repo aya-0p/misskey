@@ -36300,4 +36300,3 @@ export interface operations {
         };
     };
 }
-
