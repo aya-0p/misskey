@@ -90,12 +90,12 @@ const menuDef = computed<SuperMenuDef[]>(() => [{
 		icon: 'ti ti-search',
 		text: i18n.ts.lookup,
 		action: adminLookup,
-	}, ...(instance.disableRegistration ? [{
+	}, {
 		type: 'button' as const,
 		icon: 'ti ti-user-plus',
 		text: i18n.ts.createInviteCode,
 		action: invite,
-	}] : [])],
+	}],
 }, {
 	title: i18n.ts.administration,
 	items: [{
