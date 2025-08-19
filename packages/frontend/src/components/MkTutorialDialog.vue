@@ -16,6 +16,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 	<template v-else-if="page === 3" #header><i class="ti ti-home"></i> {{ i18n.ts._initialTutorial._timeline.title }}</template>
 	<template v-else-if="page === 4" #header><i class="ti ti-pencil-plus"></i> {{ i18n.ts._initialTutorial._postNote.title }}</template>
 	<template v-else-if="page === 5" #header><i class="ti ti-eye-exclamation"></i> {{ i18n.ts._initialTutorial._howToMakeAttachmentsSensitive.title }}</template>
+	<template v-else-if="page === 6" #header><i class="ti ti-home-spark"></i> {{ i18n.ts._initialTutorial._private.title }}</template>
 	<template v-else #header>{{ i18n.ts._initialTutorial.title }}</template>
 
 	<div style="overflow-x: clip;">
@@ -122,6 +123,21 @@ SPDX-License-Identifier: AGPL-3.0-only
 				</div>
 			</template>
 			<template v-else-if="page === 6">
+				<div style="height: 100cqh; overflow: auto;">
+					<div :class="$style.pageRoot">
+						<div class="_spacer" style="--MI_SPACER-min: 20px; --MI_SPACER-max: 28px;" :class="$style.pageMain">
+							<XPrivate/>
+						</div>
+						<div :class="$style.pageFooter">
+							<div class="_buttonsCenter">
+								<MkButton rounded @click="page--"><i class="ti ti-arrow-left"></i> {{ i18n.ts.goBack }}</MkButton>
+								<MkButton primary rounded gradate @click="page++">{{ i18n.ts.continue }} <i class="ti ti-arrow-right"></i></MkButton>
+							</div>
+						</div>
+					</div>
+				</div>
+			</template>
+			<template v-else-if="page === 7">
 				<div :class="$style.centerPage">
 					<MkAnimBg style="position: absolute; top: 0;" :scale="1.5"/>
 					<div class="_spacer" style="--MI_SPACER-min: 20px; --MI_SPACER-max: 28px;">
@@ -156,6 +172,7 @@ import XNote from '@/components/MkTutorialDialog.Note.vue';
 import XTimeline from '@/components/MkTutorialDialog.Timeline.vue';
 import XPostNote from '@/components/MkTutorialDialog.PostNote.vue';
 import XSensitive from '@/components/MkTutorialDialog.Sensitive.vue';
+import XPrivate from '@/components/MkTutorialDialog.Private.vue';
 import MkAnimBg from '@/components/MkAnimBg.vue';
 import { i18n } from '@/i18n.js';
 import { instance } from '@/instance.js';
@@ -177,7 +194,7 @@ const page = ref(props.initialPage ?? 0);
 
 watch(page, (to) => {
 	// チュートリアルの枚数を増やしたら必ず変更すること！！
-	if (to === 6) {
+	if (to === 7) {
 		claimAchievement('tutorialCompleted');
 	}
 });
