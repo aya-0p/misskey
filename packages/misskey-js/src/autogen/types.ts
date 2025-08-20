@@ -36388,4 +36388,3 @@ export interface operations {
         };
     };
 }
-
