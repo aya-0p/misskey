@@ -114,7 +114,12 @@ export class SignupApiService {
 		const invitationCode = body['invitationCode'];
 		const emailAddress = body['emailAddress'];
 
-		if (this.meta.emailRequiredForSignup) {
+		// disableRegistration === false, emailRequiredForSignup === trueでinvitationCodeが存在する場合、email認証を省略する
+		let bypassEmail = false;
+		if (!this.meta.disableRegistration && this.meta.emailRequiredForSignup && invitationCode) {
+			bypassEmail = true;
+		}
+		if (this.meta.emailRequiredForSignup && !bypassEmail) {
 			if (emailAddress == null || typeof emailAddress !== 'string') {
 				reply.code(400);
 				return;
@@ -130,7 +135,7 @@ export class SignupApiService {
 		let ticket: MiRegistrationTicket | null = null;
 
 		// テスト時はこの機構は障害となるため無効にする
-		if (process.env.NODE_ENV !== 'test' && this.meta.disableRegistration) {
+		if (process.env.NODE_ENV !== 'test' && (this.meta.disableRegistration || bypassEmail)) {
 			if (invitationCode == null || typeof invitationCode !== 'string') {
 				reply.code(400);
 				return;
@@ -151,7 +156,7 @@ export class SignupApiService {
 			}
 
 			// メアド認証が有効の場合
-			if (this.meta.emailRequiredForSignup) {
+			if (this.meta.emailRequiredForSignup && !bypassEmail) {
 				// メアド認証済みならエラー
 				if (ticket.usedBy) {
 					reply.code(400);
@@ -169,7 +174,7 @@ export class SignupApiService {
 			}
 		}
 
-		if (this.meta.emailRequiredForSignup) {
+		if (this.meta.emailRequiredForSignup && !bypassEmail) {
 			if (await this.usersRepository.exists({ where: { usernameLower: username.toLowerCase(), host: IsNull() } })) {
 				throw new FastifyReplyError(400, 'DUPLICATED_USERNAME');
 			}
