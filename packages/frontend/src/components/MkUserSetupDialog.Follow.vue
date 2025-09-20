@@ -19,7 +19,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 		</MkPagination>
 	</MkFolder>
 
-	<MkFolder :defaultOpen="true">
+	<!-- <MkFolder :defaultOpen="true">
 		<template #label>{{ i18n.ts.popularUsers }}</template>
 
 		<MkPagination :paginator="popularUsersPaginator">
@@ -29,7 +29,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 				</div>
 			</template>
 		</MkPagination>
-	</MkFolder>
+	</MkFolder> -->
 </div>
 </template>
 

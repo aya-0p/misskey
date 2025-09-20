@@ -1547,6 +1547,7 @@ declare namespace entities {
         AdminFederationDeleteAllFilesRequest,
         AdminFederationRefreshRemoteInstanceMetadataRequest,
         AdminFederationRemoveAllFollowingRequest,
+        AdminFederationRemoveAllFolloweeRequest,
         AdminFederationUpdateInstanceRequest,
         AdminForwardAbuseUserReportRequest,
         AdminGetIndexStatsResponse,
