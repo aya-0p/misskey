@@ -3,7 +3,7 @@ SPDX-FileCopyrightText: syuilo and misskey-project
 SPDX-License-Identifier: AGPL-3.0-only
 -->
 
-<template>
+<!-- <template>
 <PageWithHeader v-model:tab="tab" :actions="headerActions" :tabs="headerTabs" :swipable="true">
 	<div v-if="tab === 'featured'">
 		<XFeatured/>
@@ -15,7 +15,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 		<XRoles/>
 	</div>
 </PageWithHeader>
-</template>
+</template> -->
 
 <script lang="ts" setup>
 import { computed, watch, ref, useTemplateRef } from 'vue';
