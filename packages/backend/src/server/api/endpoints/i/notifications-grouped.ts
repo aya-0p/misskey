@@ -6,6 +6,7 @@
 import { In } from 'typeorm';
 import * as Redis from 'ioredis';
 import { Inject, Injectable } from '@nestjs/common';
+import ms from 'ms';
 import type { NotesRepository } from '@/models/_.js';
 import {
 	obsoleteNotificationTypes,
@@ -26,8 +27,8 @@ export const meta = {
 	requireCredential: true,
 
 	limit: {
-		duration: 30000,
-		max: 30,
+		duration: ms('1min'),
+		max: 60, // 1分に60回 (default: 30秒に30回)
 	},
 
 	kind: 'read:notifications',

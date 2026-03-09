@@ -36896,4 +36896,3 @@ export interface operations {
         };
     };
 }
-
