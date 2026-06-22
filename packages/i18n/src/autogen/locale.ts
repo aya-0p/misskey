@@ -2029,6 +2029,10 @@ export interface Locale extends ILocale {
      */
     "invitationCode": string;
     /**
+     * 招待コード(入力するとメール認証を省略できます)
+     */
+    "invitationCodeOpt": string;
+    /**
      * 確認しています
      */
     "checking": string;
@@ -6828,6 +6832,64 @@ export interface Locale extends ILocale {
              */
             "doItToContinue": string;
         };
+				"_private": {
+					/**
+					 * 本サーバー限定の機能
+					 */
+					"title": string;
+					/**
+					 * ここではこのサーバーで独自に設定された機能を紹介します。
+					 */
+					"description": string;
+					/**
+					 * アカウント作成直後の制限
+					 */
+					"restriction_title": string;
+					/**
+					 * アカウント作成直後はBotによる荒らし抑制のため、複数の制限を設定しています。
+					 */
+					"restriction_description_1": string;
+					/**
+					 * 制限は一定以上の時間とノート投稿で自動的に緩和されます。
+					 */
+					"restriction_description_2": string;
+					/**
+					 * 他サーバーで一定以上の活動が確認された場合は制限が早めに緩和されることもあります。
+					 */
+					"restriction_description_3": string;
+					/**
+					 * 「定住者」ロール
+					 */
+					"member_title": string;
+					/**
+					 * 本サーバーで一定以上の活動が確認された場合、「定住者」ロールを受け取ることがあります。
+					 */
+					"member_description_1": string;
+					/**
+					 * 「定住者」は多くの制限を解除されたり、招待を行うことができます。
+					 */
+					"member_description_2": string;
+					/**
+					 * 常時招待機能
+					 */
+					"invitation_title": string;
+					/**
+					 * メールアドレスを持たない方向けに一部の方からの招待があればメールアドレス無しにアカウントを作ることができます。
+					 */
+					"invitation_description_1": string;
+					/**
+					 * なお、招待することができるのは管理者と「定住者」ロールを持つ人です。
+					 */
+					"invitation_description_2": string;
+					/**
+					 * 「定住者」ロールをお持ちの方はメニューからこのサーバーのアイコン→招待から招待コードを作成できます。
+					 */
+					"invitation_description_3": string;
+					/**
+					 * 招待を受けたい人が管理者(@admin)に問い合わせることでも受け取ることができます。(受け取りには一定の制限があります。)
+					 */
+					"invitation_description_4": string;
+				};
         "_done": {
             /**
              * チュートリアルは終了です🎉
