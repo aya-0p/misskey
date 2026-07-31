@@ -14,6 +14,10 @@ SPDX-License-Identifier: AGPL-3.0-only
 				<template #label>{{ i18n.ts.invitationCode }}</template>
 				<template #prefix><i class="ti ti-key"></i></template>
 			</MkInput>
+			<MkInput v-if="!instance.disableRegistration && instance.emailRequiredForSignup" v-model="invitationCode" type="text" :spellcheck="false">
+				<template #label>{{ i18n.ts.invitationCodeOpt }}</template>
+				<template #prefix><i class="ti ti-key"></i></template>
+			</MkInput>
 			<MkInput v-model="username" type="text" pattern="^[a-zA-Z0-9_]{1,20}$" :spellcheck="false" autocomplete="username" required data-testid="signup-username" @update:modelValue="onChangeUsername">
 				<template #label>{{ i18n.ts.username }} <div v-tooltip:dialog="i18n.ts.usernameInfo" class="_button _help"><i class="ti ti-help-circle"></i></div></template>
 				<template #prefix>@</template>
@@ -29,7 +33,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 					<span v-else-if="usernameState === 'max-range'" style="color: var(--MI_THEME-error)"><i class="ti ti-alert-triangle ti-fw"></i> {{ i18n.ts.tooLong }}</span>
 				</template>
 			</MkInput>
-			<MkInput v-if="instance.emailRequiredForSignup" v-model="email" :debounce="true" type="email" :spellcheck="false" required data-testid="signup-email" @update:modelValue="onChangeEmail">
+			<MkInput v-if="instance.emailRequiredForSignup" v-model="email" :debounce="true" type="email" :spellcheck="false" data-testid="signup-email" data-cy-signup-email @update:modelValue="onChangeEmail">
 				<template #label>{{ i18n.ts.emailAddress }} <div v-tooltip:dialog="i18n.ts._signup.emailAddressInfo" class="_button _help"><i class="ti ti-help-circle"></i></div></template>
 				<template #prefix><i class="ti ti-mail"></i></template>
 				<template #caption>
@@ -137,8 +141,8 @@ const shouldDisableSubmitting = computed((): boolean => {
 		instance.enableRecaptcha && !reCaptchaResponse.value ||
 		instance.enableTurnstile && !turnstileResponse.value ||
 		instance.enableTestcaptcha && !testcaptchaResponse.value ||
-		instance.emailRequiredForSignup && emailState.value !== 'ok' ||
-		instance.disableRegistration && invitationCode.value === '' ||
+		instance.disableRegistration && !invitationCode.value ||
+		instance.emailRequiredForSignup && !invitationCode.value && emailState.value !== 'ok' ||
 		usernameState.value !== 'ok' ||
 		passwordRetypeState.value !== 'match';
 });
@@ -280,7 +284,7 @@ async function onSubmit(): Promise<void> {
 	});
 
 	if (res && res.ok) {
-		if (res.status === 204 || instance.emailRequiredForSignup) {
+		if (res.status === 204 || (instance.emailRequiredForSignup && !signupPayload.invitationCode)) {
 			os.alert({
 				type: 'success',
 				title: i18n.ts._signup.almostThere,

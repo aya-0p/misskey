@@ -17,9 +17,9 @@ import { AnnouncementService } from '@/core/AnnouncementService.js';
 import { QueueLoggerService } from '../QueueLoggerService.js';
 
 // モデレーターが不在と判断する日付の閾値
-const MODERATOR_INACTIVITY_LIMIT_DAYS = 7;
+const MODERATOR_INACTIVITY_LIMIT_DAYS = 365;
 // 警告通知やログ出力を行う残日数の閾値
-const MODERATOR_INACTIVITY_WARNING_REMAINING_DAYS = 2;
+const MODERATOR_INACTIVITY_WARNING_REMAINING_DAYS = 30;
 // 期限から6時間ごとに通知を行う
 const MODERATOR_INACTIVITY_WARNING_NOTIFY_INTERVAL_HOURS = 6;
 const ONE_HOUR_MILLI_SEC = 1000 * 60 * 60;
